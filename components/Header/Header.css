@@ -1,0 +1,32 @@
+.customHeaderClass {
+  position: relative;
+  background: url("../../public/headerBg.png") lightgray 50% / cover no-repeat;
+  height: 100vh;
+}
+
+.customHeaderClass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.733);
+  z-index: 1;
+}
+
+header > div {
+  position: relative;
+  z-index: 2;
+}
+
+.centeredContent {
+  min-height: 85%;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.header .content {
+  position: relative;
+  z-index: 10;
+}

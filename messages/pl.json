@@ -1,0 +1,89 @@
+{
+  "Header": {
+    "header": "Przyjmij równowagę, znajdź spokój",
+    "description": "Odkryj moc terapii poznawczo-behawioralnej (CBT) z naszymi doświadczonymi terapeutami. Nasze spersonalizowane sesje są zaprojektowane tak, aby pomóc Ci pokonać wyzwania, osiągnąć jasność umysłu i cieszyć się emocjonalnym dobrostanem. Wyrusz w podróż do zdrowszego umysłu już dziś."
+  },
+  "Navbar": {
+    "logo": "Centrum Terapii Poznawczo-Behawioralne",
+    "about": "O nas",
+    "services": "Usługi",
+    "contact": "Kontakt"
+  },
+  "About": {
+    "header": "Dlaczego warto wybrać MindMap?",
+    "description": "W MindMap wierzymy w transformacyjną moc terapii, która pomoże Ci osiągnąć równowagę i rozwój osobisty. Niezależnie od tego, czy zmagasz się z lękiem, depresją, traumą, czy po prostu chcesz poprawić swoje umiejętności życiowe, nasze środowisko opiekuńcze zostało zaprojektowane tak, aby pomóc Ci rozwijać się w otoczeniu, które ceni poufność i zaufanie."
+  },
+  "Benefits": {
+    "smallHeader": "Wzmocnij swój umysł, rozwijaj się razem",
+    "header": "Znajdź swoją drogę do zdrowia psychicznego dzięki terapii online",
+    "firstItemHeader": "Terapia indywidualna",
+    "firstItemDesc": "Nasze spersonalizowane sesje terapeutyczne są dostosowane do Twoich unikalnych potrzeb, wspierając rozwój i uzdrowienie.",
+    "secondItemHeader": "Konsultacja psychologiczna",
+    "secondItemDesc": "Uzyskaj fachowe porady i wskazówki od naszych doświadczonych psychologów, aby stawić czoła wyzwaniom życiowym.",
+    "thirdItemHeader": "Blog o zdrowiu psychicznym",
+    "thirdItemDesc": "Zdobądź wiedzę i praktyczne wskazówki dotyczące poprawy swojego dobrostanu psychicznego poprzez nasze informacyjne wpisy na blogu.",
+    "fourthItemHeader": "Umawianie konsultacji",
+    "fourthItemDesc": "Łatwo zarezerwuj swoją konsultację online i zrób pierwszy krok w kierunku zrównoważonego życia."
+  },
+  "Services": {
+    "header": "Nasze usługi są zaprojektowane, aby zaspokoić szeroki zakres problemów, w tym",
+    "firstServiceHeader": "Ulga w lęku",
+    "firstServiceDesc": "Dostosowane strategie skutecznego zarządzania lękiem i odzyskiwania kontroli.",
+    "secondServiceHeader": "Leczenie zaburzeń odżywiania",
+    "secondServiceDesc": "Wsparcie w procesie zdrowienia z zaburzeń odżywiania, rozwijając zdrowe relacje z jedzeniem i obrazem ciała.",
+    "thirdServiceHeader": "Odzyskiwanie po traumie",
+    "thirdServiceDesc": "Wskazówki dotyczące przezwyciężania traumy i PTSD z empatią.",
+    "fourthServiceHeader": "Leczenie bezsenności",
+    "fourthServiceDesc": "Pomaganie w ustanowieniu zdrowych wzorców snu i poprawie ogólnego samopoczucia.",
+    "fifthServiceHeader": "Wsparcie w zaburzeniach nastroju",
+    "fifthServiceDesc": "Kompleksowe plany leczenia zaburzeń nastroju i promowanie uzdrowienia.",
+    "sixthServiceHeader": "Rozwój osobisty",
+    "sixthServiceDesc": "Wzmocnienie przez rozwój osobisty, aby osiągnąć swoje cele.",
+    "buttonText": "Rozpocznij swoją podróż"
+  },
+  "Highlights": {
+    "header": "Najważniejsze informacje z bloga",
+    "description": "Rozpocznij transformującą przygodę z Centrum Terapii Poznawczo-Behawioralnej MindMap i wyrusz w podróż ku zdrowiu psychicznemu."
+  },
+  "Faq": {
+    "header": "Dowiedz się więcej o nas",
+    "description": "Najczęściej Zadawane Pytania",
+    "questions": [
+      {
+        "question": "Jak mogę umówić się na konsultację?",
+        "answer": "Umówienie się na konsultację jest proste! Wystarczy odwiedzić naszą stronę internetową i przejść do sekcji 'Umów się na konsultację'. Wybierz dogodną datę i godzinę, a nasz zespół potwierdzi twoją rezerwację."
+      },
+      {
+        "question": "Czy Centrum Terapii MindMap jest odpowiednie dla osób w każdym wieku?",
+        "answer": "Centrum Terapii Poznawczo-Behawioralnej MindMap koncentruje się na terapii dla dorosłych, zapewniając, że każda sesja jest dostosowana do indywidualnych potrzeb każdego klienta."
+      },
+      {
+        "question": "Czy mogę uzyskać dostęp do zasobów zdrowia psychicznego na waszej stronie?",
+        "answer": "Tak, nasza sekcja blogowa jest pełna cennych zasobów zdrowia psychicznego, artykułów i wskazówek, które wspierają cię w twojej drodze do zdrowia psychicznego. Bądź na bieżąco i czerp inspirację z naszych najnowszych aktualizacji!"
+      },
+      {
+        "question": "Czy oferujecie sesje terapii wirtualnej?",
+        "answer": "Tak, oferujemy sesje terapii wirtualnej dla tych, którzy wolą wygodę online. Doświadcz tego samego poziomu opieki i profesjonalizmu w wygodzie własnej przestrzeni."
+      },
+      {
+        "question": "Jak mogę wiedzieć, czy CBT jest dla mnie odpowiednie?",
+        "answer": "Decyzja o tym, czy Terapia Poznawczo-Behawioralna (CBT) jest dla ciebie odpowiednia, zależy od różnych czynników osobistych i konkretnych wyzwań, przed którymi stoisz. CBT jest bardzo skuteczna w przypadku wielu problemów, takich jak lęk, depresja, trauma, zarządzanie stresem i inne. Jest zaprojektowana, aby pomóc ci zrozumieć i zmienić negatywne wzorce myślenia, co może znacznie poprawić twoje samopoczucie emocjonalne. Najlepszym sposobem na określenie, czy CBT jest odpowiednim podejściem dla ciebie, jest konsultacja z jednym z naszych terapeutów. Podczas tej sesji nasz terapeuta oceni twoje indywidualne okoliczności i doradzi, czy CBT będzie korzystne w twoim przypadku. Jesteśmy zobowiązani do pomocy w znalezieniu najbardziej odpowiedniej i skutecznej terapii dla twoich potrzeb."
+      }
+    ]
+  },
+
+  "Footer": {
+    "services": "Usługi",
+    "therapy": "Terapia",
+    "consultation": "Konsultacja",
+    "aboutUs": "O nas",
+    "ourMission": "Nasza Misja",
+    "whoWeAre": "Kim jesteśmy",
+    "connectWithUs": "Skontaktuj się z nami",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "pinterest": "Pinterest",
+    "companyName": "Centrum CBT MindMap - Twoja droga do zdrowia psychicznego",
+    "copyright": "© 2024 Centrum CBT MindMap. Wszelkie prawa zastrzeżone."
+  }
+}
