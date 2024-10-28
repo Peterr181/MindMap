@@ -19,7 +19,7 @@ export default async function RootLayout({
   const { locale } = await params;
 
   const resolvedLocale = locale ?? "en";
-
+  // @ts-ignore
   const messages = await getMessages(resolvedLocale);
 
   return (
