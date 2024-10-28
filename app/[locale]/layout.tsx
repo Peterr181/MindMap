@@ -14,14 +14,16 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale?: string }>;
 }>) {
   const { locale } = await params;
-  // @ts-ignore
-  const messages = await getMessages(locale);
+
+  const resolvedLocale = locale ?? "en";
+
+  const messages = await getMessages(resolvedLocale);
 
   return (
-    <html lang={locale} className="font-title">
+    <html lang={resolvedLocale} className="font-title">
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
