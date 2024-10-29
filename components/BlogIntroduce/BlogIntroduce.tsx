@@ -1,10 +1,10 @@
 import React from "react";
 import MaxWidthWrapper from "../MaxWidthWrapper";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-const Highlights = () => {
-  const t = useTranslations("Highlights");
+const BlogIntroduce = () => {
+  const t = useTranslations("BlogIntroduce");
   return (
     <section className="mt-[108px]">
       <MaxWidthWrapper>
@@ -13,19 +13,30 @@ const Highlights = () => {
             <h2 className="mt-[32px] text-[#054B4E] text-[30px] font-bold leading-[42px]">
               {t("header")}
             </h2>
+            <div
+              className="p-[10px] border border-[#B3B3B3] mt-[44px] mb-[20px] flex justify-center items-center rounded-[12px]"
+              style={{ width: "fit-content" }}
+            >
+              <Image
+                src="/starIcon.svg"
+                alt="benefit icon"
+                width={24}
+                height={24}
+              />
+            </div>
             <p className="mt-[10px] text-[#054B4E] text-[16px] font-normal leading-[24px]">
               {t("description")}
             </p>
 
-            <div className="flex mt-[32px] mb-6 lg:mb-0">
-              <button className="flex h-[44px] min-h-[44px] px-[16px] justify-center items-center gap-[12px] rounded-[12px] border border-[#2463EB] bg-[#2463EB] text-white hover:bg-white hover:text-[#2463EB] transition-colors duration-200">
+            <div className="flex mt-[32px]">
+              <button className="flex h-[44px] min-h-[44px]  justify-center items-center gap-[12px] rounded-[12px] bg-inherit text-[#2463EB] hover:bg-white hover:text-[#2463EB] transition-colors duration-200">
                 {t("buttonText")}
               </button>
             </div>
           </div>
           <div>
             <Image
-              src="/highlightImage.png"
+              src="/blogIntroduce.png"
               alt="highlight image"
               width={504}
               height={524}
@@ -37,4 +48,4 @@ const Highlights = () => {
   );
 };
 
-export default Highlights;
+export default BlogIntroduce;

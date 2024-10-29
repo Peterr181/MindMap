@@ -10,9 +10,6 @@ const Benefits = () => {
     <section className="mt-[108px] mb-[64px]">
       <MaxWidthWrapper>
         <div>
-          <h3 className="text-[#4D4D4D] sm:text-[18px] text-[16px] font-bold ">
-            {t("smallHeader")}
-          </h3>
           <h2 className="sm:text-[30px] text-[24px] font-bold text-[#054B4E] mt-3 mb-[64px]">
             {t("header")}
           </h2>

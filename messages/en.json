@@ -26,7 +26,7 @@
     "fourthItemDesc": "Easily book your consultation online and take the first step towards a balanced life."
   },
   "Services": {
-    "header": "Our services are designed to address a wide range of issues including",
+    "header": "Our services are designed to address",
     "firstServiceHeader": "Anxiety Relief",
     "firstServiceDesc": "Tailored strategies to manage anxiety effectively and regain control.",
     "secondServiceHeader": "Eating Disorder Treatment",
@@ -42,8 +42,14 @@
     "buttonText": "Start Your Journey"
   },
   "Highlights": {
-    "header": "Blog Highlights",
-    "description": "Embark on a transformative experience with MindMap Cognitive Behavioral Therapy Center and embark on a journey towards mental well-being."
+    "header": "Schedule Your Online Therapy Session",
+    "description": "Book a session with our compassionate therapists from the comfort of your home. Choose a time that works for you and take the first step toward a brighter tomorrow.",
+    "buttonText": "Schedule Now"
+  },
+  "BlogIntroduce": {
+    "header": "Explore Mindfull Insights - Your Source for Cognitive Behavioral Therapy Tips",
+    "description": "Explore our blog for valuable insights and advice on mental health. Discover articles that inspire and inform, helping you stay informed about personal wellbeing.",
+    "buttonText": "Start Exploring Now"
   },
   "Faq": {
     "header": "Discover More About Us",

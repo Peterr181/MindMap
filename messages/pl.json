@@ -43,7 +43,13 @@
   },
   "Highlights": {
     "header": "Najważniejsze informacje z bloga",
-    "description": "Rozpocznij transformującą przygodę z Centrum Terapii Poznawczo-Behawioralnej MindMap i wyrusz w podróż ku zdrowiu psychicznemu."
+    "description": "Rozpocznij transformującą przygodę z Centrum Terapii Poznawczo-Behawioralnej MindMap i wyrusz w podróż ku zdrowiu psychicznemu.",
+    "buttonText": "Zaplanuj Teraz"
+  },
+  "BlogIntroduce": {
+    "header": "Poznaj Mindfull Insights — Twoje źródło wskazówek dotyczących terapii poznawczo-behawioralnej",
+    "description": "Przeglądaj naszego bloga, aby uzyskać cenne spostrzeżenia i porady dotyczące zdrowia psychicznego. Odkryj artykuły, które inspirują i informują, pomagając Ci być na bieżąco z osobistym dobrem.",
+    "buttonText": "Zacznij odkrywać już teraz"
   },
   "Faq": {
     "header": "Dowiedz się więcej o nas",

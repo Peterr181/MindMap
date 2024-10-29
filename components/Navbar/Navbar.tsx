@@ -45,7 +45,7 @@ const Navbar = () => {
                 onChange={handleLanguageToggle}
                 className="sr-only"
               />
-              <div className="w-10 h-6 bg-gray-300 rounded-full shadow-inner"></div>
+              <div className="w-10 h-6 bg-inherit border border-white rounded-full shadow-inner"></div>
               <div
                 className={`dot absolute left-0 top-0 w-6 h-6 bg-white rounded-full shadow transition ${
                   isEnglish ? "transform translate-x-full bg-blue-500" : ""
@@ -98,9 +98,9 @@ const Navbar = () => {
                     onChange={handleLanguageToggle}
                     className="sr-only"
                   />
-                  <div className="w-10 h-6 bg-gray-300 rounded-full shadow-inner"></div>
+                  <div className="w-10 h-6 bg-inherit border border-white  rounded-full shadow-inner"></div>
                   <div
-                    className={`dot absolute left-0 top-0 w-6 h-6 bg-white rounded-full shadow transition ${
+                    className={`dot absolute left-0 top-0 w-6 h-6 bg-inherit border border-white rounded-full shadow transition ${
                       isEnglish ? "transform translate-x-full bg-blue-500" : ""
                     }`}
                   ></div>

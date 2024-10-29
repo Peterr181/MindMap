@@ -9,7 +9,7 @@ interface ServiceProps {
 
 const Service = ({ icon, title, description }: ServiceProps) => {
   return (
-    <div className="flex flex-col items-center bg-[#FCFCFC] pt-[24px] pb-[24px] pl-[16px] pr-[16px]">
+    <div className="flex flex-col items-center  pt-[24px] pb-[24px] pl-[16px] pr-[16px]">
       <div
         className="p-[10px] border border-[#B3B3B3] mb-[20px] flex justify-center items-center rounded-[12px]"
         style={{ width: "fit-content" }}
