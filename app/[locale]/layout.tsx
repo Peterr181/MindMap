@@ -5,9 +5,9 @@ import { NextIntlClientProvider } from "next-intl";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
-  title: "MindMap",
+  title: "CBTC | MindMap",
   description:
-    "At MindMap, we believe in the transformative power of therapy to help you achieve balance and personal growth. Whether you are dealing with anxiety, depression, trauma, or simply looking to enhance your life skills, our nurturing environment is designed to help you thrive in a setting that values confidentiality and trust.",
+    "At MindMap, we believe in the transformative power of therapy to help you achieve balance and personal growth. Whether you are dealing with anxiety, depression, trauma, or simply looking to enhance your life skills.",
 };
 
 export default async function RootLayout({

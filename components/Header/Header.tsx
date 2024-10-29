@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="h-screen bg-cover customHeaderClass">
       <Navbar />
-      <div className="flex flex-col justify-center items-center flex-grow text-center centeredContent">
+      <div className="flex flex-col justify-center items-center flex-grow text-center centeredContent lg:p-0 p-6 ">
         <h1 className="font-semibold text-[36px] sm:text-[60px] text-[#FCFCFC] tracking-wide">
           {t("header")}
         </h1>
