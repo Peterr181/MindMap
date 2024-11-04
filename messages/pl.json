@@ -1,7 +1,8 @@
 {
   "Header": {
     "header": "Przyjmij równowagę, znajdź spokój",
-    "description": "Odkryj moc terapii poznawczo-behawioralnej (CBT) z naszymi doświadczonymi terapeutami. Nasze spersonalizowane sesje są zaprojektowane tak, aby pomóc Ci pokonać wyzwania, osiągnąć jasność umysłu i cieszyć się emocjonalnym dobrostanem. Wyrusz w podróż do zdrowszego umysłu już dziś."
+    "description": "Odkryj moc terapii poznawczo-behawioralnej (CBT) z naszymi doświadczonymi terapeutami. Nasze spersonalizowane sesje są zaprojektowane tak, aby pomóc Ci pokonać wyzwania, osiągnąć jasność umysłu i cieszyć się emocjonalnym dobrostanem. Wyrusz w podróż do zdrowszego umysłu już dziś.",
+    "buttonText": "CZYTAJ WIĘCEJ"
   },
   "Navbar": {
     "logo": "Cognitive Behavioral Therapy Center",

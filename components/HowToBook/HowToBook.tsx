@@ -10,11 +10,12 @@ const HowToBook = () => {
     <section className="mt-[108px] mb-[44px]">
       <MaxWidthWrapper>
         <div>
-          <h2 className="text-center  text-[#074A68] font-fontPrimary leading-[42px] font-extrabold  sm:text-[56px] text-[38px]">
+          <h2 className="text-center text-[#074A68] font-fontPrimary leading-[42px] font-extrabold sm:text-[56px] text-[38px]">
             {t("header")}
           </h2>
-          <div className="flex md:flex-row flex-col items-center justify-center gap-[12px] mt-[64px] text-center">
-            <div className=" ">
+          <div className="flex md:flex-row flex-col items-start justify-center gap-[12px] mt-[64px] text-center">
+            {/** First Step */}
+            <div className="flex flex-col items-center">
               <div className="flex justify-center items-center">
                 <Image
                   src="/howtobook1.svg"
@@ -30,7 +31,8 @@ const HowToBook = () => {
                 {t("firstStepDesc")}
               </p>
             </div>
-            <div className="md:mt-0 mt-[32px]">
+            {/** Second Step */}
+            <div className="flex flex-col items-center md:mt-0 mt-[32px]">
               <div className="flex justify-center items-center">
                 <Image
                   src="/howtobook2.svg"
@@ -46,7 +48,8 @@ const HowToBook = () => {
                 {t("secondStepDesc")}
               </p>
             </div>
-            <div className="md:mt-0 mt-[32px] ">
+            {/** Third Step */}
+            <div className="flex flex-col items-center md:mt-0 mt-[32px]">
               <div className="flex justify-center items-center">
                 <Image
                   src="/howtobook3.svg"
@@ -58,7 +61,7 @@ const HowToBook = () => {
               <h3 className="font-fontSecondary text-[22px] font-semibold tracking-[0.88px] leading-[33px] text-[#074A68] mt-[12px] mb-[12px]">
                 {t("thirdStepHeader")}
               </h3>
-              <p className="text-[20px] text-[#074A68] font-fontSecondary font-light  sm:w-[70%] w-full mx-auto">
+              <p className="text-[20px] text-[#074A68] font-fontSecondary font-light sm:w-[70%] w-full mx-auto">
                 {t("thirdStepDesc")}
               </p>
             </div>

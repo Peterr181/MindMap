@@ -71,7 +71,7 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <Link href="/booknow">
+            <Link href="/schedule">
               <div>
                 <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#FFD015] text-[#074A6B] font-bold leading-[26px] text-[16px] transition-all hover:bg-white hover:text-[#FFD015] whitespace-nowrap">
                   BOOK NOW
@@ -109,7 +109,7 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <Link href="/booknow">
+                <Link href="/schedule">
                   <div>
                     <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#FFD015] text-[#074A6B] font-bold leading-[26px] text-[16px] transition-all hover:bg-white hover:text-[#FFD015]">
                       BOOK NOW

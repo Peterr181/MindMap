@@ -2,6 +2,7 @@ import React from "react";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 const Footer = () => {
   const t = useTranslations("Footer");
@@ -16,12 +17,16 @@ const Footer = () => {
                 {t("services")}
               </h4>
               <ul className="flex flex-col gap-[16px]">
-                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] ">
-                  {t("therapy")}
-                </li>
-                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] ">
-                  {t("consultation")}
-                </li>
+                <Link href="/schedule">
+                  <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] hover:font-bold transition-all duration-100 ">
+                    {t("therapy")}
+                  </li>
+                </Link>
+                <Link href="/schedule">
+                  <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] hover:font-bold transition-all duration-100 ">
+                    {t("consultation")}
+                  </li>
+                </Link>
               </ul>
             </div>
             <div className="flex-1 flex flex-col gap-[16px]">
@@ -29,12 +34,16 @@ const Footer = () => {
                 {t("aboutUs")}
               </h4>
               <ul className="flex flex-col gap-[16px]">
-                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px]">
-                  {t("ourMission")}
-                </li>
-                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px]">
-                  {t("whoWeAre")}
-                </li>
+                <Link href="/mission">
+                  <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] hover:font-bold transition-all duration-100">
+                    {t("ourMission")}
+                  </li>
+                </Link>
+                <Link href="/team">
+                  <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] hover:font-bold transition-all duration-100">
+                    {t("whoWeAre")}
+                  </li>
+                </Link>
               </ul>
             </div>
             <div className="flex-1 flex flex-col gap-[16px]">
@@ -42,7 +51,7 @@ const Footer = () => {
                 {t("connectWithUs")}{" "}
               </h4>
               <ul className="flex flex-col gap-[16px]">
-                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] flex items-center gap-3 sm:justify-start justify-center">
+                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] flex items-center gap-3 sm:justify-start justify-center hover:font-bold transition-all duration-100">
                   <Image
                     src="/instagram.svg"
                     alt="instagram icon"
@@ -51,7 +60,7 @@ const Footer = () => {
                   />
                   <p>{t("instagram")}</p>
                 </li>
-                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] flex items-center gap-3 sm:justify-start justify-center">
+                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] flex items-center gap-3 sm:justify-start justify-center hover:font-bold transition-all duration-100">
                   <Image
                     src="/linkedin.svg"
                     alt="linkedin icon"
@@ -60,7 +69,7 @@ const Footer = () => {
                   />
                   <p>{t("facebook")}</p>
                 </li>
-                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] flex items-center gap-3 sm:justify-start justify-center">
+                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] flex items-center gap-3 sm:justify-start justify-center hover:font-bold transition-all duration-100">
                   <Image
                     src="/pinterest.svg"
                     alt="pinterest icon"
@@ -73,9 +82,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-row items-center gap-[20px] mt-[40px] mb-[40px]">
-            <div className="flex items-center gap-2">
-              <Image src="/mainLogo.png" alt="logo" width={120} height={74} />
-            </div>
+            <Link href="/">
+              <div className="flex items-center gap-2">
+                <Image src="/mainLogo.png" alt="logo" width={120} height={74} />
+              </div>
+            </Link>
             <div>
               <p className="text-[#074A68] font-semibold leading-[24px] text-[18px] font-fontSecondary">
                 {t("companyName")}

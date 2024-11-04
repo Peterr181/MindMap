@@ -22,7 +22,7 @@ const LanguageNav = () => {
         onClick={() => {
           if (isEnglish) handleLanguageToggle();
         }}
-        className={`cursor-pointer pl-[16px] pr-[16px] ${
+        className={`cursor-pointer pl-[16px] pr-[16px] hover:font-bold transition-all duration-100 ${
           !isEnglish ? "font-bold" : ""
         }`}
       >
@@ -32,7 +32,7 @@ const LanguageNav = () => {
         onClick={() => {
           if (!isEnglish) handleLanguageToggle();
         }}
-        className={`cursor-pointer pl-[16px] pr-[16px] ${
+        className={`cursor-pointer pl-[16px] pr-[16px] hover:font-bold transition-all duration-100 ${
           isEnglish ? "font-bold" : ""
         }`}
       >

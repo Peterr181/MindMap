@@ -29,7 +29,7 @@ const About = () => {
               {t("description")}
             </p>
             <div className="flex justify-center lg:justify-start">
-              <Link href="/booknow">
+              <Link href="/schedule">
                 <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#A0D195] text-[#074A68] font-bold leading-[26px] text-[16px] transition-all hover:bg-white hover:text-[#A0D195]">
                   WHY CHOOSE US?
                 </button>

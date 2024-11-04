@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
 
 const Header = () => {
   const t = useTranslations("Header");
@@ -17,11 +18,12 @@ const Header = () => {
           {t("description")}
         </p>
 
-        {/* Responsive Button and Icon Container */}
         <div className="flex cursor-pointer justify-center items-center md:justify-end w-full md:w-[718px] mt-[48px] btnContainer ">
-          <button className=" font-fontSecondary font-normal text-[20px] leading-[26px] text-[#FFFDF7] tracking-[1px] learnMoreButton">
-            LEARN MORE
-          </button>
+          <Link href="/mission">
+            <button className=" font-fontSecondary font-normal text-[20px] leading-[26px] text-[#FFFDF7] tracking-[1px] learnMoreButton">
+              {t("buttonText")}
+            </button>
+          </Link>
           <div className=" md:block sm:ml-[90px] ml-[16px]">
             <Image
               src="/chevronRight.svg"
