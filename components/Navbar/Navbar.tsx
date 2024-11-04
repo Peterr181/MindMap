@@ -75,7 +75,7 @@ const Navbar = () => {
       </div>
 
       <div className="lg:hidden relative md:pr-0 pr-6">
-        <div className="w-[24px] h-[24px]">
+        <div className="w-[24px] h-[24px] ml-[100px]">
           <Image
             src={mobileMenuIcon}
             alt="mobile menu"
