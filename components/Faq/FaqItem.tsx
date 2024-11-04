@@ -60,7 +60,7 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
       >
         <p
           ref={contentRef}
-          className=" text-[18px] text-[#074A68] font-fontSecondary leading-[28px] font-light tracking-[0.2px] p-3 w-[90%] mx-auto text-center"
+          className=" text-[18px] text-[#074A68] font-fontSecondary leading-[28px] font-light tracking-[0.2px] p-3 w-[90%]  translate-x-[10px]"
         >
           {answer}
         </p>
