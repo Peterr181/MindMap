@@ -21,7 +21,7 @@ const About = () => {
             />
           </div>
 
-          <div className="md:w-1/2 md:mt-0 mt-6 text-left">
+          <div className="lg:w-1/2 lg:mt-0 mt-6 text-left lg:ml-9 ml-0">
             <h2 className="  text-[#074A68] font-fontPrimary leading-[75px] font-extrabold  sm:text-[68px] text-[38px] tracking-[-0.56px] mb-[16px] text-center lg:text-start">
               {t("header")}
             </h2>
