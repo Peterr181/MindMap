@@ -16,4 +16,5 @@ body {
   color: #fff;
   background-color: #fffdf7;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }

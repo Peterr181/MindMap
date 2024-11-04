@@ -1,8 +1,9 @@
 "use client";
+import "./Navbar.css";
 import Image from "next/image";
 import logo from "../../public/mainLogo.png";
 import mobileMenuIcon from "../../public/mobileMenu.svg";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 
@@ -11,6 +12,7 @@ const Navbar = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("home");
+  const [isSticky, setIsSticky] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -18,50 +20,51 @@ const Navbar = () => {
 
   const handleNavClick = (item: string) => {
     setActiveItem(item);
+    setIsMenuOpen(false); // Close menu when item is clicked (especially for mobile)
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 800) {
+        // Increase threshold as needed
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex items-center justify-between ml-[100px] mr-[100px] pt-[16px] pb-[16px]">
-      <div className="flex items-center gap-4 md:pl-0 pl-6">
-        <Image src={logo} alt="CBTC logo" width={120} height={113} />
-        <h2 className="font-semibold md:text-[20px] text-[14px]">
-          {t("logo")}
-        </h2>
-      </div>
+    <nav
+      className={`${
+        isSticky
+          ? "fixed top-0 left-0 right-0 bg-white w-full shadow-md py-[4px] z-50 navbarAnimated"
+          : "relative"
+      } flex items-center justify-between px-[100px] py-[16px] bg-white transition-all duration-500 ease-in-out`}
+    >
+      <Link href="/">
+        <div className="flex items-center gap-4">
+          <Image src={logo} alt="CBTC logo" width={120} height={113} />
+        </div>
+      </Link>
       <div className="hidden lg:flex">
         <ul className="flex items-center lg:gap-[16px] gap-[4px] text-[#074A68] font-normal leading-[25.6px] text-[16px] font-fontNavbar">
-          <li
-            className={`cursor-pointer pl-[16px] pr-[16px] whitespace-nowrap ${
-              activeItem === "home" ? "font-bold" : ""
-            }`}
-            onClick={() => handleNavClick("home")}
-          >
-            <Link href="/services">{t("home")}</Link>
-          </li>
-          <li
-            className={`cursor-pointer pl-[16px] pr-[16px] whitespace-nowrap ${
-              activeItem === "mission" ? "font-bold" : ""
-            }`}
-            onClick={() => handleNavClick("mission")}
-          >
-            <Link href="/services">{t("mission")}</Link>
-          </li>
-          <li
-            className={`cursor-pointer pl-[16px] pr-[16px] whitespace-nowrap ${
-              activeItem === "team" ? "font-bold" : ""
-            }`}
-            onClick={() => handleNavClick("team")}
-          >
-            <Link href="/services">{t("team")}</Link>
-          </li>
-          <li
-            className={`cursor-pointer pl-[16px] pr-[16px] whitespace-nowrap ${
-              activeItem === "blog" ? "font-bold" : ""
-            }`}
-            onClick={() => handleNavClick("blog")}
-          >
-            <Link href="/services">{t("blog")}</Link>
-          </li>
+          {["home", "mission", "team", "blog"].map((item) => (
+            <li
+              key={item}
+              className={`cursor-pointer hover:font-bold transition-all duration-300 px-[16px] whitespace-nowrap ${
+                activeItem === item ? "font-bold" : ""
+              }`}
+              onClick={() => handleNavClick(item)}
+            >
+              <Link href={`/${item === "home" ? "" : item}`}>{t(item)}</Link>
+            </li>
+          ))}
           <li>
             <Link href="/booknow">
               <div>
@@ -74,8 +77,8 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="lg:hidden relative md:pr-0 pr-6">
-        <div className="w-[24px] h-[24px] ml-[100px]">
+      <div className="lg:hidden relative">
+        <div className="w-[24px] h-[24px]">
           <Image
             src={mobileMenuIcon}
             alt="mobile menu"
@@ -85,40 +88,21 @@ const Navbar = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="absolute right-0 top-full mt-2 w-48 bg-white text-black shadow-lg rounded-md z-10 mr-6">
+          <div className="absolute right-0 top-full mt-2 w-48 bg-white text-black shadow-lg rounded-md z-10">
             <ul className="flex flex-col items-center gap-[16px] text-[#074A68] font-normal leading-[25.6px] text-[16px] font-fontNavbar p-6">
-              <li
-                className={`cursor-pointer pl-[16px] pr-[16px] whitespace-nowrap ${
-                  activeItem === "home" ? "font-bold" : ""
-                }`}
-                onClick={() => handleNavClick("home")}
-              >
-                <Link href="/">{t("home")}</Link>
-              </li>
-              <li
-                className={`cursor-pointer pl-[16px] pr-[16px] whitespace-nowrap ${
-                  activeItem === "mission" ? "font-bold" : ""
-                }`}
-                onClick={() => handleNavClick("mission")}
-              >
-                <Link href="/services">{t("mission")}</Link>
-              </li>
-              <li
-                className={`cursor-pointer pl-[16px] pr-[16px] whitespace-nowrap ${
-                  activeItem === "team" ? "font-bold" : ""
-                }`}
-                onClick={() => handleNavClick("team")}
-              >
-                <Link href="/services">{t("team")}</Link>
-              </li>
-              <li
-                className={`cursor-pointer pl-[16px] pr-[16px] whitespace-nowrap ${
-                  activeItem === "blog" ? "font-bold" : ""
-                }`}
-                onClick={() => handleNavClick("blog")}
-              >
-                <Link href="/services">{t("blog")}</Link>
-              </li>
+              {["home", "mission", "team", "blog"].map((item) => (
+                <li
+                  key={item}
+                  className={`cursor-pointer px-[16px] whitespace-nowrap ${
+                    activeItem === item ? "font-bold" : ""
+                  }`}
+                  onClick={() => handleNavClick(item)}
+                >
+                  <Link href={`/${item === "home" ? "" : item}`}>
+                    {t(item)}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <Link href="/booknow">
                   <div>

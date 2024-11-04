@@ -1,0 +1,14 @@
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px); /* Start slightly above */
+    opacity: 0; /* Start transparent */
+  }
+  to {
+    transform: translateY(0); /* End at its original position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.navbarAnimated {
+  animation: slideDown 0.5s ease-in-out forwards; /* Adjust timing as needed */
+}

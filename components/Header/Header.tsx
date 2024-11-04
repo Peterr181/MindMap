@@ -18,8 +18,8 @@ const Header = () => {
         </p>
 
         {/* Responsive Button and Icon Container */}
-        <div className="flex cursor-pointer justify-center items-center md:justify-end w-full md:w-[718px] mt-[48px]">
-          <button className="learnMoreButton font-fontSecondary font-normal text-[20px] leading-[26px] text-[#FFFDF7] tracking-[1px]">
+        <div className="flex cursor-pointer justify-center items-center md:justify-end w-full md:w-[718px] mt-[48px] btnContainer ">
+          <button className=" font-fontSecondary font-normal text-[20px] leading-[26px] text-[#FFFDF7] tracking-[1px] learnMoreButton">
             LEARN MORE
           </button>
           <div className=" md:block sm:ml-[90px] ml-[16px]">

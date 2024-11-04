@@ -33,16 +33,20 @@ header > div {
 
 .learnMoreButton {
   position: relative;
-
   padding-bottom: 10px; /* Adds spacing between the text and the line */
+  transition: color 0.3s ease; /* Optional: transition for text color on hover */
 }
 
 .learnMoreButton::before {
   content: "";
   position: absolute;
   bottom: 0; /* Aligns it at the bottom of the button */
-
-  width: 85%; /* Adjust this value for the desired line width */
-  height: 2px; /* Thickness of the line */
+  width: 85%; /* Default line width */
+  height: 1px; /* Thickness of the line */
   background-color: #fffdf7; /* Line color */
+  transition: width 0.3s ease; /* Transition for width change */
+}
+
+.learnMoreButton:hover::before {
+  width: 100%; /* Expand to full width on hover */
 }
