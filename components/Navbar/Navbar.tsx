@@ -1,14 +1,16 @@
-"use client";
+"use client"; // Keep this to make the Navbar a client component
 import "./Navbar.css";
 import Image from "next/image";
 import logo from "../../public/mainLogo.png";
 import mobileMenuIcon from "../../public/mobileMenu.svg";
 import React, { useState, useEffect } from "react";
-import { Link } from "@/navigation";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation"; // Import usePathname hook
 
 const Navbar = () => {
   const t = useTranslations("Navbar");
+  const pathname = usePathname(); // Get the current pathname
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("home");
@@ -39,13 +41,16 @@ const Navbar = () => {
     };
   }, []);
 
+  // Determine if the current page is the landing page
+  const isLandingPage = pathname === "/en" || pathname === "/pl"; // Adjust the condition if your landing page path is different
+
   return (
     <nav
-      className={`${
+      className={`${isLandingPage ? "bg-[#FFFDF7]" : "bg-gold"} ${
         isSticky
-          ? "fixed top-0 left-0 right-0 bg-white w-full shadow-md py-[4px] z-50 navbarAnimated"
+          ? "fixed top-0 left-0 right-0 shadow-md py-[4px] z-50 navbarAnimated"
           : "relative"
-      } flex items-center justify-between px-[100px] py-[16px] bg-white transition-all duration-500 ease-in-out`}
+      } flex items-center justify-between px-[100px] py-[16px] transition-all duration-500 ease-in-out`}
     >
       <Link href="/">
         <div className="flex items-center gap-4">

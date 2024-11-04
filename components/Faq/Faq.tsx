@@ -4,7 +4,7 @@ import React from "react";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import FaqItem from "./FaqItem";
 import { useTranslations } from "next-intl";
-import { Link } from "@/navigation";
+import { Link } from "@/i18n/routing";
 
 const Faq = () => {
   const t = useTranslations("Faq");

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import { useTranslations } from "next-intl";
-import { Link } from "@/navigation";
+import { Link } from "@/i18n/routing";
 
 const BlogIntroduction = () => {
   const t = useTranslations("BlogIntroduction");

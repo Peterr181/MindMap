@@ -1,9 +1,9 @@
 import React from "react";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import Image from "next/image";
-import aboutImage from "../../public/aboutImage.png";
+
 import { useTranslations } from "next-intl";
-import { Link } from "@/navigation";
+import { Link } from "@/i18n/routing";
 
 const About = () => {
   const t = useTranslations("About");
