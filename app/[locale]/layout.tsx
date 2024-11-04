@@ -3,6 +3,8 @@ import "../../app/globals.css";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import LanguageNav from "@/components/LanguageNav/LanguageNav";
 
 export const metadata: Metadata = {
   title: "CBTC | MindMap",
@@ -27,6 +29,8 @@ export default async function RootLayout({
     <html lang={resolvedLocale} className="font-title">
       <body>
         <NextIntlClientProvider messages={messages}>
+          <LanguageNav />
+          <Navbar />
           {children}
           <Footer />
         </NextIntlClientProvider>

@@ -5,22 +5,31 @@ interface ServiceProps {
   icon: string;
   title: string;
   description: string;
+  color: string;
 }
 
-const Service = ({ icon, title, description }: ServiceProps) => {
+const Service = ({ color, title, description }: ServiceProps) => {
+  const getBackgroundClass = (color: string) => {
+    switch (color) {
+      case "#CAE6F2":
+        return "bg-[#CAE6F2]"; // Corresponding Tailwind class
+      case "#A0D195":
+        return "bg-[#A0D195]";
+      default:
+        return "";
+    }
+  };
+
   return (
     <div className="flex flex-col items-center  pt-[24px] pb-[24px] pl-[16px] pr-[16px]">
-      <div
-        className="p-[10px] border border-[#B3B3B3] mb-[20px] flex justify-center items-center rounded-[12px]"
-        style={{ width: "fit-content" }}
+      <h3
+        className={`text-[22px] text-[#074A68] font-medium leading-[20px] tracking-[-0.88px] font-fontSecondary ${getBackgroundClass(
+          color
+        )} p-[10px] rounded-[30px] pr-4 pl-4`}
       >
-        <Image src={icon} alt="benefit icon" width={24} height={24} />
-      </div>
-
-      <h3 className="text-[18px] text-[#054B4E] leading-[20px] font-semibold">
         {title}
       </h3>
-      <p className="mt-[10px] text-[16px] text-[#054B4E] leading-[24px] font-normal text-center">
+      <p className="mt-[20px] text-[20px] text-[#074A68] font-fontSecondary leading-[28px] font-light text-center tracking-[0.2px]">
         {description}
       </p>
     </div>

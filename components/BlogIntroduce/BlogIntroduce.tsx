@@ -2,41 +2,36 @@ import React from "react";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Link } from "@/navigation";
 
 const BlogIntroduce = () => {
   const t = useTranslations("BlogIntroduce");
   return (
     <section className="mt-[108px]">
       <MaxWidthWrapper>
-        <div className="flex sm:flex-row flex-col items-center justify-between">
-          <div className="flex flex-col md:w-[480px] w-full">
-            <h2 className="mt-[32px] text-[#054B4E] text-[30px] font-bold leading-[42px]">
-              {t("header")}
-            </h2>
-            <div
-              className="p-[10px] border border-[#B3B3B3] mt-[44px] mb-[20px] flex justify-center items-center rounded-[12px]"
-              style={{ width: "fit-content" }}
-            >
-              <Image
-                src="/starIcon.svg"
-                alt="benefit icon"
-                width={24}
-                height={24}
-              />
-            </div>
-            <p className="mt-[10px] text-[#054B4E] text-[16px] font-normal leading-[24px]">
-              {t("description")}
-            </p>
+        <div className="flex lg:flex-row flex-col items-center lg:justify-between justify-center gap-[12px]">
+          <div className="flex flex-col justify-center items-center">
+            <div className="sm:w-[80%] w-full">
+              <h2 className="mt-[32px] text-[#074A68] sm:text-[56px] text-[38px] font-extrabold leading-[55px] font-fontPrimary  text-center lg:text-start">
+                {t("header")}
+              </h2>
 
-            <div className="flex mt-[32px]">
-              <button className="flex h-[44px] min-h-[44px]  justify-center items-center gap-[12px] rounded-[12px] bg-inherit text-[#2463EB] hover:bg-white hover:text-[#2463EB] transition-colors duration-200">
-                {t("buttonText")}
-              </button>
+              <p className="mt-[32px] text-[#074A68] font-fontSecondary font-light text-[22px] leading-[30.8px] mb-[60px] text-center lg:text-start ">
+                {t("description")}
+              </p>
+              <div className="flex  lg:justify-end justify-center mb-[16px] sm:mb-0">
+                <Link href="/schedule">
+                  <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#FFD015] text-[#074A6B] font-bold leading-[26px] text-[16px] transition-all hover:bg-white hover:text-[#FFD015]">
+                    {t("buttonText")}
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
-          <div>
+
+          <div className="lg:w-[504px] lg:h-[524px] w-full h-full flex-shrink-0 flex lg:justify-start justify-center lg:mt-0 mt-3">
             <Image
-              src="/blogIntroduce.png"
+              src="/highlightImage.png"
               alt="highlight image"
               width={504}
               height={524}

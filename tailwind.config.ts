@@ -10,7 +10,11 @@ const config: Config = {
     extend: {
       fontFamily: {
         title: ["Inter", "sans-serif"],
+        fontPrimary: ["Playfair Display", "sans-serif"],
+        fontSecondary: ["Fira Sans", "sans-serif"],
+        fontNavbar: ["Open Sans", "sans-serif"],
       },
+
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

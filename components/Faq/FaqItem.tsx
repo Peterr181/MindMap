@@ -9,19 +9,20 @@ interface FaqItemProps {
 
 const FaqItem = ({ question, answer }: FaqItemProps) => {
   const [isOpen, setIsOpen] = useState(false);
-  const contentRef = useRef<HTMLParagraphElement | null>(null); // Reference to the content
+  const contentRef = useRef<HTMLParagraphElement | null>(null);
 
   const toggleFaq = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="border border-[#B3B3B3] rounded-[12px] bg-[#FCFCFC] pt-[20px] pl-[24px] pr-[24px] pb-[24px] shadow-sm mb-[16px]">
+    <div className="mb-[16px] ">
+      {/* Question container with ::before border */}
       <div
-        className="flex justify-between items-center p-4 cursor-pointer "
+        className="relative flex md:flex-row justify-between items-center px-[24px] py-[20px] cursor-pointer"
         onClick={toggleFaq}
       >
-        <h4 className="text-[#054B4E] text-[18px] font-medium leading-[28px] ">
+        <h4 className="text-[#074A68] text-[18px] font-fontSecondary font-normal leading-[27px]">
           {question}
         </h4>
         <Image
@@ -31,19 +32,35 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
           height={24}
           className={`transition-transform duration-300 ${
             isOpen ? "rotate-180" : "rotate-0"
-          }`} // Rotate icon when open
+          }`}
         />
+
+        {/* ::before pseudo-element for bottom border */}
+        <style jsx>{`
+          div::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 10;
+            width: 93%;
+            height: 1px;
+            background-color: #e5e7eb;
+            transform: scaleX(1);
+          }
+        `}</style>
       </div>
+
+      {/* Expandable answer content */}
       <div
         style={{
           maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0",
           overflow: "hidden",
-          transition: "max-height 0.3s ease-in-out", // Transition for smooth opening/closing
+          transition: "max-height 0.3s ease-in-out",
         }}
       >
         <p
           ref={contentRef}
-          className="p-4 text-[#0D0D0D] text-[18px] font-normal leading-[28px]"
+          className=" text-[18px] text-[#074A68] font-fontSecondary leading-[28px] font-light tracking-[0.2px] p-3 w-[90%] mx-auto text-center"
         >
           {answer}
         </p>

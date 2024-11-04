@@ -4,10 +4,11 @@
     "description": "Odkryj moc terapii poznawczo-behawioralnej (CBT) z naszymi doświadczonymi terapeutami. Nasze spersonalizowane sesje są zaprojektowane tak, aby pomóc Ci pokonać wyzwania, osiągnąć jasność umysłu i cieszyć się emocjonalnym dobrostanem. Wyrusz w podróż do zdrowszego umysłu już dziś."
   },
   "Navbar": {
-    "logo": "Centrum Terapii Poznawczo-Behawioralne",
-    "about": "O nas",
-    "services": "Usługi",
-    "contact": "Kontakt"
+    "logo": "Cognitive Behavioral Therapy Center",
+    "home": "Home",
+    "mission": "Our Mission",
+    "team": "Our Team",
+    "blog": "Our Blog"
   },
   "About": {
     "header": "Dlaczego warto wybrać MindMap?",
@@ -54,6 +55,7 @@
   "Faq": {
     "header": "Dowiedz się więcej o nas",
     "description": "Najczęściej Zadawane Pytania",
+    "buttonText": "Zapytaj Nas",
     "questions": [
       {
         "question": "Jak mogę umówić się na konsultację?",
@@ -91,5 +93,30 @@
     "pinterest": "Pinterest",
     "companyName": "Centrum CBT MindMap - Twoja droga do zdrowia psychicznego",
     "copyright": "© 2024 Centrum CBT MindMap. Wszelkie prawa zastrzeżone."
+  },
+  "HowToBook": {
+    "header": "How to Book a Session ?",
+    "firstStepHeader": "1. Select Your Therapist",
+    "firstStepDesc": "Visit our therapists' individual calendars to view their availability.",
+    "secondStepHeader": "2. Choose Your Session Type",
+    "secondStepDesc": "Decide which type of session suits your needs today.",
+    "thirdStepHeader": "3. Schedule Your Appointment",
+    "thirdStepDesc": "Pick a date and time that works best for you and confirm your appointment."
+  },
+  "BlogIntroduction": {
+    "header": "Your Source for Cognitive Behavioral Therapy Tips",
+    "description": "Explore our blog for valuable insights and advice on mental health. Discover articles that inspire and educate, keeping you updated on your well-being.",
+    "buttonText": "OUR BLOG"
+  },
+  "MentalWellness": {
+    "header": "Find Your Way to Mental Wellness",
+    "firstStepHeader": "Individual Therapy",
+    "firstStepDesc": "Personalized therapy sessions cater to your needs, fostering growth.",
+    "secondStepHeader": "Psychological Consultation",
+    "secondStepDesc": "Get advice from our psychologists to navigate challenges.",
+    "thirdStepHeader": "Mental Health Blog",
+    "thirdStepDesc": "Get tips for improving your mental well-being through our blog.",
+    "fourthStepHeader": "Consultation Scheduling",
+    "fourthStepDesc": "Book your consultation online and start a balanced life."
   }
 }

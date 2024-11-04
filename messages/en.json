@@ -5,9 +5,10 @@
   },
   "Navbar": {
     "logo": "Cognitive Behavioral Therapy Center",
-    "about": "About",
-    "services": "Services",
-    "contact": "Contact"
+    "home": "Home",
+    "mission": "Our Mission",
+    "team": "Our Team",
+    "blog": "Our Blog"
   },
   "About": {
     "header": "Why Choose MindMap?",
@@ -46,14 +47,40 @@
     "description": "Book a session with our compassionate therapists from the comfort of your home. Choose a time that works for you and take the first step toward a brighter tomorrow.",
     "buttonText": "Schedule Now"
   },
+  "HowToBook": {
+    "header": "How to Book a Session ?",
+    "firstStepHeader": "1. Select Your Therapist",
+    "firstStepDesc": "Visit our therapists' individual calendars to view their availability.",
+    "secondStepHeader": "2. Choose Your Session Type",
+    "secondStepDesc": "Decide which type of session suits your needs today.",
+    "thirdStepHeader": "3. Schedule Your Appointment",
+    "thirdStepDesc": "Pick a date and time that works best for you and confirm your appointment."
+  },
+  "MentalWellness": {
+    "header": "Find Your Way to Mental Wellness",
+    "firstStepHeader": "Individual Therapy",
+    "firstStepDesc": "Personalized therapy sessions cater to your needs, fostering growth.",
+    "secondStepHeader": "Psychological Consultation",
+    "secondStepDesc": "Get advice from our psychologists to navigate challenges.",
+    "thirdStepHeader": "Mental Health Blog",
+    "thirdStepDesc": "Get tips for improving your mental well-being through our blog.",
+    "fourthStepHeader": "Consultation Scheduling",
+    "fourthStepDesc": "Book your consultation online and start a balanced life."
+  },
   "BlogIntroduce": {
-    "header": "Explore Mindfull Insights - Your Source for Cognitive Behavioral Therapy Tips",
-    "description": "Explore our blog for valuable insights and advice on mental health. Discover articles that inspire and inform, helping you stay informed about personal wellbeing.",
-    "buttonText": "Start Exploring Now"
+    "header": "Schedule Your Online Therapy Session",
+    "description": "Book a session with us from the comfort of your home. Choose a time that works for you and take the first step toward a brighter tomorrow.",
+    "buttonText": "BOOK APPOINTMENT"
+  },
+  "BlogIntroduction": {
+    "header": "Your Source for Cognitive Behavioral Therapy Tips",
+    "description": "Explore our blog for valuable insights and advice on mental health. Discover articles that inspire and educate, keeping you updated on your well-being.",
+    "buttonText": "OUR BLOG"
   },
   "Faq": {
-    "header": "Discover More About Us",
-    "description": "Frequently Asked Questions",
+    "header": "Frequently Asked Questions",
+    "description": "We are here to help you understand our services and how we can support your journey.",
+    "buttonText": "ASK US MORE",
     "questions": [
       {
         "question": "How can I schedule a consultation?",
