@@ -72,7 +72,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-row items-center gap-[20px] mt-[40px]">
+          <div className="flex flex-row items-center gap-[20px] mt-[40px] mb-[40px]">
             <div className="flex items-center gap-2">
               <Image src="/mainLogo.png" alt="logo" width={120} height={74} />
             </div>
