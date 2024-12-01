@@ -15,7 +15,7 @@ const About = () => {
           <div className="lg:w-[504px] lg:h-[524px] w-full h-full flex lg:justify-start justify-center mb-3 lg:mb-0 ">
             <Image
               src="/aboutImage.png"
-              alt="highlight image"
+              alt="about image"
               width={470}
               height={500}
               quality={100}

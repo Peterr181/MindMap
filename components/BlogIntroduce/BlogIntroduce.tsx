@@ -29,12 +29,12 @@ const BlogIntroduce = () => {
             </div>
           </div>
 
-          <div className="lg:w-[504px] lg:h-[524px] w-full h-full flex-shrink-0 flex lg:justify-start justify-center lg:mt-0 mt-3">
+          <div className="lg:w-[428px] lg:h-[416px] w-full h-full flex-shrink-0 flex lg:justify-start justify-center lg:mt-0 mt-3">
             <Image
               src="/highlightImage.png"
               alt="highlight image"
               width={450}
-              height={450}
+              height={416}
               quality={100}
             />
           </div>
