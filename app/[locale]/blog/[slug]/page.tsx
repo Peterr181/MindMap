@@ -9,9 +9,9 @@ import { Link } from "@/i18n/routing";
 import ShareButtons from "@/components/ShareButtons";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 const Page = async ({ params }: PageProps) => {
