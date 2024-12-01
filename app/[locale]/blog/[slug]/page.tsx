@@ -148,6 +148,7 @@ const Page = async ({ params }: PageProps) => {
               height={45}
               alt="avatar"
               className="rounded-full"
+              quality={100}
             />
             <div className="flex flex-col text-justify">
               <p className="text-[14px] text-[#757575]">

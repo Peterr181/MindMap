@@ -18,6 +18,7 @@ const About = () => {
               alt="highlight image"
               width={470}
               height={500}
+              quality={100}
             />
           </div>
 

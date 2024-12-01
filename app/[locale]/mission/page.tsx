@@ -16,6 +16,7 @@ const Mission = () => {
               alt="our mission image"
               width={459}
               height={595}
+              quality={100}
             />
           </div>
 
@@ -43,6 +44,8 @@ const Mission = () => {
               alt="our mission image"
               width={427}
               height={439}
+              quality={100}
+              unoptimized
             />
           </div>
         </div>

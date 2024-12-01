@@ -108,7 +108,7 @@ const Team = () => {
         buttonText={t("scheduleBtn")}
       />
       <SpecialistCard
-        imageSrc="/KasiaNTeam.png"
+        imageSrc="/KasiaNowakTeam.jpg"
         name="Kasia Nowak"
         specialties={specialties2}
         imagePosition="right"

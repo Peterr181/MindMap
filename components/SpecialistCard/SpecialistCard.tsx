@@ -43,8 +43,10 @@ const SpecialistCard: React.FC<SpecialistCardProps> = ({
               src={imageSrc}
               alt={`${name} specialists image`}
               width={407}
-              height={488}
+              height={610}
               className="rounded-[16px] object-cover"
+              quality={100}
+              unoptimized
             />
           </div>
 

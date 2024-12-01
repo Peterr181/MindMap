@@ -83,7 +83,8 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
               width={45}
               height={45}
               alt="specialists avatar"
-              className="rounded-full "
+              className="rounded-full"
+              quality={100}
             />
           </div>
           <div className="flex flex-col">
@@ -110,6 +111,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
             height={416}
             alt={title}
             className="object-cover object-center w-full h-full"
+            quality={100}
           />
         </div>
       )}

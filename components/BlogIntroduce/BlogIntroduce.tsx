@@ -35,6 +35,7 @@ const BlogIntroduce = () => {
               alt="highlight image"
               width={450}
               height={450}
+              quality={100}
             />
           </div>
         </div>

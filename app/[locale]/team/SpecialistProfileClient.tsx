@@ -75,6 +75,8 @@ const SpecialistProfileClient: React.FC<SpecialistProfileClientProps> = ({
             className="rounded-[32px] sm:mt-0 mt-3"
             width={399}
             height={480}
+            quality={100}
+            unoptimized
           />
         </div>
         <h3 className="text-[#074A68] font-extrabold sm:text-[40px] text-[30px] mt-[32px] text-center lg:text-left">
