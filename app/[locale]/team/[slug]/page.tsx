@@ -2,9 +2,9 @@ import { getTranslations } from "next-intl/server";
 import SpecialistProfileClient from "../SpecialistProfileClient";
 
 interface SpecialistProfileServerProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export default async function SpecialistProfileServer({
