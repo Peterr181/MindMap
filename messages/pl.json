@@ -35,7 +35,8 @@
     "messageSending": "Wysyłanie...",
     "messageSuccess": "Wiadomość wysłana pomyślnie!",
     "messageFail": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
-    "scheduleBtn": "UMÓW WIZYTĘ"
+    "scheduleBtn": "UMÓW WIZYTĘ",
+    "chooseBtn": "Wybierz"
   },
   "Mission": {
     "headerFirst": "Nasza Misja",

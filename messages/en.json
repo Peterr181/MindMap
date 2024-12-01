@@ -99,7 +99,8 @@
     "messageSending": "Sending...",
     "messageSuccess": "Message sent successfully!",
     "messageFail": " Failed to send message. Please try again.",
-    "scheduleBtn": "SCHEDULE YOUR SESSION"
+    "scheduleBtn": "SCHEDULE YOUR SESSION",
+    "chooseBtn": "Choose"
   },
   "Mission": {
     "headerFirst": "Our Mission",

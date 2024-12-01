@@ -1,7 +1,5 @@
 "use client";
-
-import { useState, useEffect } from "react";
-import Link from "next/link";
+import { useState } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { ServiceCard } from "@/components/Services/ServiceCard"; // Import the ServiceCard component
 import Image from "next/image";

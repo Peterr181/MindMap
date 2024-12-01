@@ -56,7 +56,13 @@ const Navbar = () => {
     >
       <Link href="/">
         <div className="flex items-center gap-4">
-          <Image src={logo} alt="CBTC logo" width={120} height={113} />
+          <Image
+            src={logo}
+            alt="CBTC logo"
+            width={120}
+            height={113}
+            quality={100}
+          />
         </div>
       </Link>
       <div className="hidden lg:flex">
@@ -120,7 +126,7 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <Link href="/schedule">
+                <Link href="/team">
                   <div>
                     <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#FFD015] text-[#074A6B] font-bold leading-[26px] text-[16px] transition-all hover:bg-inherit  hover:text-[#FFD015]">
                       {t("bookNow")}
