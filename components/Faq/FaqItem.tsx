@@ -22,7 +22,7 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
         className="relative flex md:flex-row justify-between items-center px-[24px] py-[20px] cursor-pointer"
         onClick={toggleFaq}
       >
-        <h4 className="text-[#074A68] text-[18px] font-fontSecondary font-normal leading-[27px]">
+        <h4 className="text-[#074A68] text-lg font-fontSecondary font-normal leading-[27px]">
           {question}
         </h4>
         <Image
@@ -60,7 +60,7 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
       >
         <p
           ref={contentRef}
-          className=" text-[18px] text-[#074A68] font-fontSecondary leading-[28px] font-light tracking-[0.2px] p-3 w-[90%]  translate-x-[10px]"
+          className=" text-base text-[#074A68] font-fontSecondary leading-[28px] font-light tracking-[0.2px] p-3 w-[90%]  translate-x-[10px]"
         >
           {answer}
         </p>

@@ -1,9 +1,10 @@
 "use client";
 import { usePathname, useRouter } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import React, { useState } from "react";
 
 const LanguageNav = () => {
+  const t = useTranslations("LanguageSwitcher");
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
@@ -26,7 +27,7 @@ const LanguageNav = () => {
           !isEnglish ? "font-bold" : ""
         }`}
       >
-        Polish
+        {t("polish")}
       </p>
       <p
         onClick={() => {
@@ -36,7 +37,7 @@ const LanguageNav = () => {
           isEnglish ? "font-bold" : ""
         }`}
       >
-        English
+        {t("english")}
       </p>
     </div>
   );

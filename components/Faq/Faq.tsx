@@ -33,22 +33,22 @@ const Faq = () => {
   ];
 
   return (
-    <section className="mt-[120px]">
+    <section className="mt-[50px]">
       <MaxWidthWrapper>
         <div className="flex flex-col sm:flex-row justify-between">
           <div>
             <div className="flex flex-col items-center sm:items-start text-center sm:text-left w-full max-w-[600px]">
-              <h2 className="text-[#074A68] text-[38px] sm:text-[56px] font-extrabold leading-tight font-fontPrimary mt-[32px] sm:mt-0">
+              <h2 className="text-[#074A68] text-[38px] sm:text-5xl font-extrabold leading-tight font-fontPrimary mt-[32px] sm:mt-0">
                 {t("header")}
               </h2>
 
-              <p className="mt-[32px] text-[#074A68] font-fontSecondary font-light text-[22px] leading-[1.4] mb-[60px]">
+              <p className="mt-[32px] text-[#074A68] font-fontSecondary font-light text-lg leading-[1.4] mb-[60px]">
                 {t("description")}
               </p>
 
               <div className="flex justify-center sm:justify-start">
                 <Link href="/blog">
-                  <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#074A68] text-[#FFFDF7] font-fontNavbar font-bold leading-[26px] text-[16px] transition-all hover:bg-white hover:text-[#074A68]">
+                  <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#074A68] text-[#FFFDF7] font-fontNavbar font-bold leading-[26px] text-sm transition-all hover:bg-inherit hover:text-[#074A68]">
                     {t("buttonText")}
                   </button>
                 </Link>

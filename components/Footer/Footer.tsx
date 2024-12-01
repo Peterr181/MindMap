@@ -81,17 +81,17 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-row items-center gap-[20px] mt-[40px] mb-[40px]">
+          <div className="flex sm:flex-row flex-col items-center gap-[20px] mt-[40px] mb-[40px]">
             <Link href="/">
               <div className="flex items-center gap-2">
                 <Image src="/mainLogo.png" alt="logo" width={120} height={74} />
               </div>
             </Link>
             <div>
-              <p className="text-[#074A68] font-semibold leading-[24px] text-[18px] font-fontSecondary">
+              <p className="text-[#074A68] font-semibold leading-[24px] text-[18px] font-fontSecondary sm:text-left text-center">
                 {t("companyName")}
               </p>
-              <p className="text-[#B3B3B3] text-[16px] font-fontSecondary leading-[24px] mt-[20px] ">
+              <p className="text-[#B3B3B3] text-[16px] font-fontSecondary leading-[24px] mt-[20px] sm:text-left text-center ">
                 {t("copyright")}
               </p>
             </div>

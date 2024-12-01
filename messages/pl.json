@@ -1,19 +1,123 @@
 {
   "Header": {
-    "header": "Przyjmij równowagę, znajdź spokój",
-    "description": "Odkryj moc terapii poznawczo-behawioralnej (CBT) z naszymi doświadczonymi terapeutami. Nasze spersonalizowane sesje są zaprojektowane tak, aby pomóc Ci pokonać wyzwania, osiągnąć jasność umysłu i cieszyć się emocjonalnym dobrostanem. Wyrusz w podróż do zdrowszego umysłu już dziś.",
-    "buttonText": "CZYTAJ WIĘCEJ"
+    "header": "Osiągnij Równowagę, Odnajdź Spokój",
+    "description": "Odkryj moc terapii poznawczo-behawioralnej (CBT) z naszymi doświadczonymi terapeutami. Nasze indywidualne sesje mają na celu pomóc w przezwyciężeniu wyzwań, osiągnięciu jasności umysłu i poprawie samopoczucia. Wyrusz w podróż do lepszego komfortu psychicznego już dziś.",
+    "buttonText": "DOWIEDZ SIĘ WIĘCEJ"
   },
   "Navbar": {
-    "logo": "Cognitive Behavioral Therapy Center",
-    "home": "Home",
-    "mission": "Our Mission",
-    "team": "Our Team",
-    "blog": "Our Blog"
+    "home": "Strona Główna",
+    "mission": "Nasza Misja",
+    "team": "Nasza drużyna",
+    "blog": "Blog",
+    "bookNow": "REZERWUJ TERAZ"
+  },
+
+  "Teams": {
+    "header": "Umów Swoją Sesję Online",
+    "description": "Witamy w bezpiecznej i przyjaznej przestrzeni, w której rozwój osobisty i powrót do zdrowia są priorytetem. W MindMap zdajemy sobie sprawę z tego, jak ważne jest odpowiednie wsparcie na drodze do zdrowia psychicznego. Nasze wirtualne sesje terapeutyczne zapewniają dyskretne, wygodne i wspierające środowisko umożliwiające zgłębianie myśli i wyzwań bez wychodzenia z domu.",
+    "headerSecond": "Poznaj Naszych Terapeutów",
+    "descriptionSecond": "Każdy z nas posiada unikalny zestaw umiejętności i wiedzy specjalistycznej, zapewniając, że możesz znaleźć idealną terapię dla swoich potrzeb. Oto, co oferujemy:",
+    "headerThird": "Wybierz Rodzaj Sesji",
+    "descriptionThird": "Oferujemy trzy opcje dostosowane do Twoich unikalnych potrzeb:",
+    "firstItemHeader": "Konsultacja psychoterapeutyczna",
+    "firstItemDesc": "Sesja wprowadzająca mająca na celu zrozumienie Twoich potrzeb i ustalenie celów.",
+    "secondItemHeader": "Psychoterapia indywidualna",
+    "secondItemDesc": "Kontynuacja po konsultacji, jest to spersonalizowana terapia mająca na celu pracę nad bieżącymi wyzwaniami osobistymi.",
+    "thirdItemHeader": "Konsultacja psychologiczna",
+    "thirdItemDesc": "Koncentruje się na udzielaniu specjalistycznych porad dotyczących konkretnych problemów związanych ze zdrowiem psychicznym.",
+    "buttonText": "SCHEDULE YOUR SESSION",
+    "headerEnd": "Rozpocznij Drogę Do Poprawy Swojego Zdrowia Psychicznego Już Dziś",
+    "descriptionEnd": "Podjęcie pierwszego kroku w kierunku osiągnięcia zdrowego umysłu jest teraz łatwiejsze niż kiedykolwiek. Niezależnie od tego, czy szukasz rozwiązania problemów lękowych, czy jesteś na drodze do samoświadomości, nasi terapeuci są gotowi wspierać Cię i zachęcać na każdym etapie Twojej podróży.",
+    "contactUs": "Skontakuj się z nami",
+    "contactDesc": "Jeśli masz jakieś pytania, nie wahaj się z nami skontaktować. Jesteśmy tu dla Ciebie na każdym kroku drogi.",
+    "contactPlaceholder": "Wprowadź adres e-mail",
+    "contactButton": "Wyślij wiadomość",
+    "messageSending": "Wysyłanie...",
+    "messageSuccess": "Wiadomość wysłana pomyślnie!",
+    "messageFail": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+    "scheduleBtn": "UMÓW WIZYTĘ"
+  },
+  "Mission": {
+    "headerFirst": "Nasza Misja",
+    "descriptionFirst": "Misją Centrum Terapii Poznawczo-Behawioralnej MindMap jest wspieranie osób w przezwyciężaniu wyzwań związanych ze zdrowiem psychicznym poprzez opartą na dowodach, współczującą opiekę. Naszym celem jest promowanie rozwoju osobistego i dobrego samopoczucia poprzez zapewnienie bezpiecznej, integracyjnej przestrzeni, w której klienci mogą uzyskać dostęp do najnowszych osiągnięć terapii poznawczo-behawioralnej (CBT). Nasze indywidualne podejście zapewnia zaspokojenie unikalnych potrzeb każdego klienta, zapewniając mu narzędzia i wiedzę do prowadzenia satysfakcjonującego życia.",
+    "headerSecond": "Nasza Wizja",
+    "descriptionSecond": "Pragniemy ujrzeć świat, w którym zdrowie psychiczne jest tak samo ważne jak zdrowie fizyczne, a ludzie mają możliwość szukania wsparcia, którego potrzebują, bez obawy przed osądem. Naszym celem jest przełamanie barier i destygmatyzacja opieki nad zdrowiem psychicznym, tak aby każdy mógł nadać priorytet swojemu zdrowiu psychicznemu.",
+    "headerThird": "Poznaj Terapeutów Tworzących MindMap",
+    "descriptionThirdFirst": "Centrum Terapii Poznawczo-Behawioralnej MindMap zostało założone przez zespół oddanych psychologów, których łączy wyjątkowe połączenie - zarówno z imienia, jak i z wizji! Choć może to prowadzić do nieporozumień przy zamawianiu kawy, cieszymy się, że łączy nas coś więcej niż tylko nazwa. Nasze wspólne dążenie do zapewnienia najwyższej jakości terapii było naszą siłą przewodnią.",
+    "descriptionThirdSecond": "Z pasją zapewniamy najlepszą terapię i doradztwo. Zapewniamy to poprzez ciągłe aktualizowanie naszych umiejętności poprzez różne kursy. Jesteśmy przeszkoleni lub certyfikowani w Szkołach Psychoterapii Poznawczo-Behawioralnej, co uprawnia nas do prowadzenia psychoterapii i poradnictwa psychologicznego. Dodatkowo nasza praca podlega regularnej superwizji, co gwarantuje, że otrzymasz wsparcie i opiekę na najwyższym poziomie.",
+    "descriptionThirdThird": "Jesteśmy Twoimi partnerami w drodze do zdrowia psychicznego. Witamy w MindMap, społeczności, która troszczy się o Twój umysł tak samo jak Ty."
+  },
+  "Blog": {
+    "header": "Odkryj dobre samopoczucie z Mindful Insights.",
+    "buttonText": "DOWIEDZ SIĘ WIĘCEJ",
+    "headerSecond": "Odkryj wartościowe zasoby dotyczące zdrowia psychicznego",
+    "descriptionSecond": "Przeglądaj nasz blog, aby znaleźć inspirujące artykuły i porady dotyczące poprawy samopoczucia.",
+    "headerThird": "Zasubskrybuj",
+    "descriptionThird": "Otrzymuj najnowsze wpisy i aktualizacje prosto na swoją skrzynkę.",
+    "inputMessage": "Wpisz tutaj swój adres e-mail",
+    "buttonSubscribe": "Subskrybuj",
+    "tags": "Kategorie: ",
+    "mindfulness": "Uważność",
+    "sad": "Smutny",
+    "happy": "Szczęśliwy",
+    "copingSkills": "Umiejętności radzenia sobie",
+    "mentalHealth": "Zdrowie psychiczne",
+    "anxiety": "Lęk",
+    "selfCare": "Samoopieka",
+    "backToBlog": "Powrót do bloga",
+    "published": "Opublikowano: ",
+    "shareThisPost": "Udostępnij ten post",
+    "messageSending": "Wysyłanie...",
+    "messageSuccess": "Zostałeś/aś zapisany/a na nasz newsletter!",
+    "messageFail": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+  "SpecialistProfile": {
+    "experience": "Doświadczenie Zawodowe",
+    "approachTitle": "Podejście Terapeutyczne",
+    "areasSupportedTitle": "Obszary Wsparcia",
+    "sessionType": "Rodzaj Sesji",
+    "appointmentText": "Wybierz dogodną dla Ciebie datę i godzinę i potwierdź wizytę.",
+    "firstItemTitle": "Konsultacja Psychoterapeutyczna",
+    "firstItemDescription": "Sesja wstępna mająca na celu zrozumienie Twoich potrzeb i ustalenie celów.",
+    "secondItemTitle": "Psychoterapia Indywidualna",
+    "secondItemDescription": "Kontynuacja po konsultacji, spersonalizowana terapia do pracy nad bieżącymi wyzwaniami osobistymi.",
+    "thirdItemTitle": "Konsultacja Psychologiczna",
+    "thirdItemDescription": "Skupia się na udzielaniu fachowych porad w zakresie konkretnych problemów zdrowia psychicznego.",
+    "specialistOne": {
+      "name": "Kasia H. Nowak",
+      "schoolName": "Psychoterapeutka w trakcie szkolenia w Szkole Terapii Poznawczo-Behawioralnej SWPS (PTTPB)",
+      "experience": "I am a psychologist and a cognitive-behavioral psychotherapist in the certification process at the SWPS School of Psychotherapy. My professional experience spans internships at psychiatric hospitals and work in renowned psychotherapy centers. I am committed to ongoing education, regularly participating in specialized training to refine my therapeutic techniques, and my practice is supervised to maintain the highest clinical standards.",
+      "approach": "I specialize in Cognitive Behavioral Therapy and integrate elements from third-wave approaches, such as schema therapy and mindfulness. This blended approach allows me to provide tailored therapy that meets each client’s unique needs while fostering lasting emotional growth.",
+      "area1": "Eating Disorders (anorexia, bulimia, binge eating)",
+      "area2": "Anxiety Disorders (phobias, generalized anxiety disorder, panic disorder)",
+      "area3": "Trauma and PTSD",
+      "area4": "Personality Disorders",
+      "area5": "Mood Disorders (depression, bipolar disorder)",
+      "area6": "Relationship Difficulties and Low Self-Esteem",
+      "area7": "Insomnia",
+      "specialtyA": "Specjalność A",
+      "specialtyB": "Specjalność B",
+      "description": "Kasia specjalizuje się w ..."
+    },
+    "specialistSecond": {
+      "name": "Kasia H. Nowak",
+      "schoolName": "Psychoterapeutka szkoląca się w Szkole Psychoterapii Crescentia (PTTPB).",
+      "experience": "I am a psychologist specializing in Cognitive Behavioral Therapy (CBT) and currently undergoing a 4-year certification program at the Crescentia School of Psychotherapy. I hold a Master’s degree in Psychology from Opole University and have achieved Level 1 TEAM-CBT Therapist Certification from the Feeling Good Institute, a leading organization in mental health professional development. My work as a therapist is regularly supervised to ensure the highest quality support for my clients. I have gained valuable experience through internships at the Psychological and Pedagogical Counseling Centre and by leading workshops focused on enhancing soft skills in young individuals. Additionally, I have a professional background in HR, having worked in both startups and multinational corporations which has helped me understand the diverse challenges individuals face in their personal and professional lives.",
+      "approach": "My approach is rooted in Cognitive Behavioral Therapy. Central to my practice is fostering a relationship built on trust, safety, and acceptance. I believe in one of the core principles of CBT therapy—acknowledging that clients are the experts on their own lives. My role is to provide the appropriate tools, guidance, and compassionate support to help clients address their challenges and achieve transformation.",
+      "area1": "Social Anxiety",
+      "area2": "Trauma and PTSD",
+      "area3": "Insomnia",
+      "area4": "Depression and Mood Disorders",
+      "area5": "Stress and Workplace Challenges",
+      "specialtyA": "Specjalność A",
+      "specialtyB": "Specjalność B",
+      "description": "Kasia specjalizuje się w ..."
+    }
   },
   "About": {
-    "header": "Dlaczego warto wybrać MindMap?",
-    "description": "W MindMap wierzymy w transformacyjną moc terapii, która pomoże Ci osiągnąć równowagę i rozwój osobisty. Niezależnie od tego, czy zmagasz się z lękiem, depresją, traumą, czy po prostu chcesz poprawić swoje umiejętności życiowe, nasze środowisko opiekuńcze zostało zaprojektowane tak, aby pomóc Ci rozwijać się w otoczeniu, które ceni poufność i zaufanie."
+    "header": "Dlaczego Warto Wybrać MindMap?",
+    "description": "W MindMap wierzymy w transformacyjną moc terapii, która pomaga osiągnąć równowagę i rozwój osobisty. Niezależnie od tego, czy zmagasz się z lękiem, depresją, traumą, czy też po prostu chcesz poprawić jakość swojego życia, oferujemy Ci przyjazne środowisko, które pomoże Ci rozwijać się w otoczeniu zapewniającym dyskrecję i zaufanie.",
+    "button": "DLACZEGO WYBRAĆ NAS?"
   },
   "Benefits": {
     "smallHeader": "Wzmocnij swój umysł, rozwijaj się razem",
@@ -28,20 +132,30 @@
     "fourthItemDesc": "Łatwo zarezerwuj swoją konsultację online i zrób pierwszy krok w kierunku zrównoważonego życia."
   },
   "Services": {
-    "header": "Nasze usługi są zaprojektowane, aby zaspokoić szeroki zakres problemów, w tym",
-    "firstServiceHeader": "Ulga w lęku",
-    "firstServiceDesc": "Dostosowane strategie skutecznego zarządzania lękiem i odzyskiwania kontroli.",
+    "header": "W Czym Możemy Ci Pomóc",
+    "firstServiceHeader": "Łagodzenie lęku",
+    "firstServiceDesc": "Dostosowane strategie skutecznego radzenia sobie z lękiem i odzyskania kontroli.",
     "secondServiceHeader": "Leczenie zaburzeń odżywiania",
-    "secondServiceDesc": "Wsparcie w procesie zdrowienia z zaburzeń odżywiania, rozwijając zdrowe relacje z jedzeniem i obrazem ciała.",
+    "secondServiceDesc": "Wspieranie powrotu do zdrowia po zaburzeniach odżywiania, wspieranie zdrowych relacji z jedzeniem i wizerunkiem ciała.",
     "thirdServiceHeader": "Odzyskiwanie po traumie",
-    "thirdServiceDesc": "Wskazówki dotyczące przezwyciężania traumy i PTSD z empatią.",
+    "thirdServiceDesc": "Wskazówki dotyczące przezwyciężania traumy i PTSD ze współczuciem.",
     "fourthServiceHeader": "Leczenie bezsenności",
-    "fourthServiceDesc": "Pomaganie w ustanowieniu zdrowych wzorców snu i poprawie ogólnego samopoczucia.",
+    "fourthServiceDesc": "Pomoc w ustanowieniu zdrowych wzorców snu i poprawie ogólnego samopoczucia.",
     "fifthServiceHeader": "Wsparcie w zaburzeniach nastroju",
-    "fifthServiceDesc": "Kompleksowe plany leczenia zaburzeń nastroju i promowanie uzdrowienia.",
+    "fifthServiceDesc": "Kompleksowe plany leczenia zaburzeń nastroju i promowanie zdrowienia.",
     "sixthServiceHeader": "Rozwój osobisty",
-    "sixthServiceDesc": "Wzmocnienie przez rozwój osobisty, aby osiągnąć swoje cele.",
-    "buttonText": "Rozpocznij swoją podróż"
+    "sixthServiceDesc": "Wspieranie poprzez rozwój osobisty w osiąganiu celów.",
+    "buttonText": "Rozpocznij swoją podróż",
+    "button": "CZYTAJ WIĘCEJ"
+  },
+  "SessionType": {
+    "firstItemHeader": "Psychotherapy Consultation",
+    "firstItemDesc": "An introductory session aimed at understanding your needs and setting goals.",
+    "secondItemHeader": "Individual Psychotherapy",
+    "secondItemDesc": "A continuation after consultation, this is a personalized therapy to work through ongoing personal challenges.",
+    "thirdItemHeader": "Psychological Consultation",
+    "thirdItemDesc": "Focuses on providing expert advice for specific mental health concerns.",
+    "buttonText": "SCHEDULE YOUR SESSION"
   },
   "Highlights": {
     "header": "Najważniejsze informacje z bloga",
@@ -49,34 +163,48 @@
     "buttonText": "Zaplanuj Teraz"
   },
   "BlogIntroduce": {
-    "header": "Poznaj Mindfull Insights — Twoje źródło wskazówek dotyczących terapii poznawczo-behawioralnej",
-    "description": "Przeglądaj naszego bloga, aby uzyskać cenne spostrzeżenia i porady dotyczące zdrowia psychicznego. Odkryj artykuły, które inspirują i informują, pomagając Ci być na bieżąco z osobistym dobrem.",
+    "header": "Mindful Insights - Twoje Źródło Wskazówek Dotyczących Terapii Poznawczo-Behawioralnej",
+    "description": "Zapoznaj się z naszym blogiem, aby uzyskać cenne spostrzeżenia i porady dotyczącezdrowia psychicznego. Odkryj artykuły, które inspirują i edukują, informując na bieżąco o swoim samopoczuciu.",
     "buttonText": "Zacznij odkrywać już teraz"
   },
+  "BlogIntroduction": {
+    "header": "Twoje Źródło Wskazówek Dotyczących Terapii Poznawczo-Behawioralnej",
+    "description": "Przeglądaj naszego bloga, aby uzyskać cenne spostrzeżenia i porady dotyczące zdrowia psychicznego. Odkryj artykuły, które inspirują i edukują, informując na bieżąco o Twoim samopoczuciu.",
+    "buttonText": "NASZ BLOG",
+    "published": "Opublikowano:",
+    "buttonTextPost": "CZYTAJ WIĘCEJ",
+    "mindfulness": "Uważność",
+    "sad": "Smutny",
+    "happy": "Szczęśliwy",
+    "copingSkills": "Umiejętności radzenia sobie",
+    "mentalHealth": "Zdrowie psychiczne",
+    "anxiety": "Lęk",
+    "selfCare": "Samoopieka"
+  },
   "Faq": {
-    "header": "Dowiedz się więcej o nas",
-    "description": "Najczęściej Zadawane Pytania",
-    "buttonText": "Zapytaj Nas",
+    "header": "Często Zadawane Pytania",
+    "description": "Jesteśmy tutaj, aby pomóc Ci zrozumieć nasze usługi i sposób, w jaki możemy wesprzeć Twoją podróż.",
+    "buttonText": "ZADAJ NAM WIĘCEJ PYTAŃ",
     "questions": [
       {
         "question": "Jak mogę umówić się na konsultację?",
-        "answer": "Umówienie się na konsultację jest proste! Wystarczy odwiedzić naszą stronę internetową i przejść do sekcji 'Umów się na konsultację'. Wybierz dogodną datę i godzinę, a nasz zespół potwierdzi twoją rezerwację."
+        "answer": "Umówienie się na konsultację jest proste! Wystarczy odwiedzić naszą stronę internetową i przejść do sekcji „Zaplanuj konsultację”. Wybierz dogodną datę i godzinę, a nasz zespół potwierdzi Twoje spotkanie."
       },
       {
-        "question": "Czy Centrum Terapii MindMap jest odpowiednie dla osób w każdym wieku?",
-        "answer": "Centrum Terapii Poznawczo-Behawioralnej MindMap koncentruje się na terapii dla dorosłych, zapewniając, że każda sesja jest dostosowana do indywidualnych potrzeb każdego klienta."
+        "question": "Czy Centrum MindMap CBT jest odpowiednie dla wszystkich grup wiekowych?",
+        "answer": "Centrum Terapii Poznawczo-Behawioralnej MindMap koncentruje się na prowadzeniu terapii dla osób dorosłych, zapewniamy, że każda sesja jest dostosowana do konkretnych potrzeb każdego klienta."
       },
       {
-        "question": "Czy mogę uzyskać dostęp do zasobów zdrowia psychicznego na waszej stronie?",
-        "answer": "Tak, nasza sekcja blogowa jest pełna cennych zasobów zdrowia psychicznego, artykułów i wskazówek, które wspierają cię w twojej drodze do zdrowia psychicznego. Bądź na bieżąco i czerp inspirację z naszych najnowszych aktualizacji!"
+        "question": "Czy mogę uzyskać dostęp do zasobów dotyczących zdrowia psychicznego na waszej stronie internetowej?",
+        "answer": "Tak, nasza sekcja bloga jest wypełniona cennymi zasobami dotyczącymi zdrowia psychicznego, artykułami i wskazówkami, które pomogą ci w podróży po zdrowie psychiczne. Bądź na bieżąco i inspiruj się naszymi najnowszymi aktualizacjami!"
       },
       {
-        "question": "Czy oferujecie sesje terapii wirtualnej?",
-        "answer": "Tak, oferujemy sesje terapii wirtualnej dla tych, którzy wolą wygodę online. Doświadcz tego samego poziomu opieki i profesjonalizmu w wygodzie własnej przestrzeni."
+        "question": "Czy oferujecie wirtualne sesje terapeutyczne?",
+        "answer": "Tak, oferujemy wirtualne sesje terapeutyczne dla tych, którzy preferują wygodę doradztwa online. Doświadcz tego samego poziomu opieki i profesjonalizmu w zaciszu własnej przestrzeni."
       },
       {
-        "question": "Jak mogę wiedzieć, czy CBT jest dla mnie odpowiednie?",
-        "answer": "Decyzja o tym, czy Terapia Poznawczo-Behawioralna (CBT) jest dla ciebie odpowiednia, zależy od różnych czynników osobistych i konkretnych wyzwań, przed którymi stoisz. CBT jest bardzo skuteczna w przypadku wielu problemów, takich jak lęk, depresja, trauma, zarządzanie stresem i inne. Jest zaprojektowana, aby pomóc ci zrozumieć i zmienić negatywne wzorce myślenia, co może znacznie poprawić twoje samopoczucie emocjonalne. Najlepszym sposobem na określenie, czy CBT jest odpowiednim podejściem dla ciebie, jest konsultacja z jednym z naszych terapeutów. Podczas tej sesji nasz terapeuta oceni twoje indywidualne okoliczności i doradzi, czy CBT będzie korzystne w twoim przypadku. Jesteśmy zobowiązani do pomocy w znalezieniu najbardziej odpowiedniej i skutecznej terapii dla twoich potrzeb."
+        "question": "Skąd mam wiedzieć, czy CBT jest dla mnie odpowiednia?",
+        "answer": "Decyzja o tym, czy terapia poznawczo-behawioralna (CBT) jest dla ciebie odpowiednia, zależy od różnych czynników osobistych i konkretnych wyzwań, przed którymi stoisz. CBT jest wysoce skuteczna w przypadku szerokiego zakresu problemów, w tym lęku, depresji, traumy, zarządzania stresem i innych. Ma na celu pomóc ci zrozumieć i zmienić negatywne wzorce myślowe, co może znacznie poprawić twoje samopoczucie emocjonalne. Jednak najlepszym sposobem na ustalenie, czy CBT jest właściwym podejściem dla Ciebie, jest konsultacja z jednym z naszych terapeutów. Podczas tej sesji nasz terapeuta oceni twoje indywidualne okoliczności i poprowadzi cię, czy CBT będzie korzystne w twoim konkretnym przypadku. Dokładamy wszelkich starań, aby pomóc Ci znaleźć najbardziej odpowiednią i skuteczną terapię dla Twoich potrzeb."
       }
     ]
   },
@@ -92,32 +220,32 @@
     "instagram": "Instagram",
     "facebook": "Facebook",
     "pinterest": "Pinterest",
-    "companyName": "Centrum CBT MindMap - Twoja droga do zdrowia psychicznego",
+    "companyName": "Centrum MindMap CBT - Twoja droga do dobrego samopoczucia psychicznego",
     "copyright": "© 2024 Centrum CBT MindMap. Wszelkie prawa zastrzeżone."
   },
   "HowToBook": {
-    "header": "How to Book a Session ?",
-    "firstStepHeader": "1. Select Your Therapist",
-    "firstStepDesc": "Visit our therapists' individual calendars to view their availability.",
-    "secondStepHeader": "2. Choose Your Session Type",
-    "secondStepDesc": "Decide which type of session suits your needs today.",
-    "thirdStepHeader": "3. Schedule Your Appointment",
-    "thirdStepDesc": "Pick a date and time that works best for you and confirm your appointment."
+    "header": "Jak Zarezerwować Sesję?",
+    "firstStepHeader": "1. Wybierz swojego terapeutę",
+    "firstStepDesc": "Odwiedź indywidualne kalendarze naszych terapeutów, aby zobaczyć ich dostępność.",
+    "secondStepHeader": "2. Wybierz rodzaj sesji",
+    "secondStepDesc": "Zdecyduj już dziś, który rodzaj sesji odpowiada Twoim potrzebom.",
+    "thirdStepHeader": "3. Zarezerwuj spotkanie",
+    "thirdStepDesc": "Wybierz datę i godzinę, która najbardziej Ci odpowiada i potwierdź spotkanie."
   },
-  "BlogIntroduction": {
-    "header": "Your Source for Cognitive Behavioral Therapy Tips",
-    "description": "Explore our blog for valuable insights and advice on mental health. Discover articles that inspire and educate, keeping you updated on your well-being.",
-    "buttonText": "OUR BLOG"
-  },
+
   "MentalWellness": {
-    "header": "Find Your Way to Mental Wellness",
-    "firstStepHeader": "Individual Therapy",
-    "firstStepDesc": "Personalized therapy sessions cater to your needs, fostering growth.",
-    "secondStepHeader": "Psychological Consultation",
-    "secondStepDesc": "Get advice from our psychologists to navigate challenges.",
-    "thirdStepHeader": "Mental Health Blog",
-    "thirdStepDesc": "Get tips for improving your mental well-being through our blog.",
-    "fourthStepHeader": "Consultation Scheduling",
-    "fourthStepDesc": "Book your consultation online and start a balanced life."
+    "header": "Znajdź Swoją Drogę do Dobrego Zdrowia Psychicznego",
+    "firstStepHeader": "Terapia indywidualna",
+    "firstStepDesc": "Spersonalizowane sesje terapeutyczne mają na celu zaspokojenie Twoich potrzeb i promowanie rozwoju.",
+    "secondStepHeader": "Konsultacja psychologiczna",
+    "secondStepDesc": "Uzyskaj porady od naszych psychologów, aby poradzić sobie z wyzwaniami.",
+    "thirdStepHeader": "Blog o zdrowiu psychicznym",
+    "thirdStepDesc": "Uzyskaj wskazówki dotyczące poprawy samopoczucia psychicznego za pośrednictwem naszego bloga.",
+    "fourthStepHeader": "Planowanie konsultacji",
+    "fourthStepDesc": "Zarezerwuj konsultację online i zacznij życie pełne równowagi."
+  },
+  "LanguageSwitcher": {
+    "polish": "Polski",
+    "english": "Angielski"
   }
 }

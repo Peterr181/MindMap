@@ -44,11 +44,13 @@ const Navbar = () => {
   // Determine if the current page is the landing page
   const isLandingPage = pathname === "/en" || pathname === "/pl"; // Adjust the condition if your landing page path is different
 
+  const notBookNow = pathname === "/en/team" || pathname === "/pl/team";
+
   return (
     <nav
-      className={`${isLandingPage ? "bg-[#FFFDF7]" : "bg-gold"} ${
+      className={`${isLandingPage ? "bg-[#FFFDF7]" : "bg-[#FFFDF7]"} ${
         isSticky
-          ? "fixed top-0 left-0 right-0 shadow-md py-[4px] z-50 navbarAnimated"
+          ? "fixed bg-white top-0 left-0 right-0 shadow-md py-[4px] z-50 navbarAnimated"
           : "relative"
       } flex items-center justify-between px-[100px] py-[16px] transition-all duration-500 ease-in-out`}
     >
@@ -65,20 +67,26 @@ const Navbar = () => {
               className={`cursor-pointer hover:font-bold transition-all duration-300 px-[16px] whitespace-nowrap ${
                 activeItem === item ? "font-bold" : ""
               }`}
-              onClick={() => handleNavClick(item)}
             >
-              <Link href={`/${item === "home" ? "" : item}`}>{t(item)}</Link>
+              <Link
+                href={`/${item === "home" ? "" : item}`}
+                onClick={() => handleNavClick(item)}
+              >
+                {t(item)}
+              </Link>
             </li>
           ))}
-          <li>
-            <Link href="/schedule">
-              <div>
-                <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#FFD015] text-[#074A6B] font-bold leading-[26px] text-[16px] transition-all hover:bg-white hover:text-[#FFD015] whitespace-nowrap">
-                  BOOK NOW
-                </button>
-              </div>
-            </Link>
-          </li>
+          {!notBookNow && (
+            <li>
+              <Link href="/team">
+                <div>
+                  <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#FFD015] text-[#074A6B] font-bold leading-[26px] text-[16px] transition-all hover:bg-inherit  hover:text-[#FFD015] whitespace-nowrap ">
+                    {t("bookNow")}
+                  </button>
+                </div>
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
 
@@ -98,12 +106,15 @@ const Navbar = () => {
               {["home", "mission", "team", "blog"].map((item) => (
                 <li
                   key={item}
-                  className={`cursor-pointer px-[16px] whitespace-nowrap ${
+                  className={` px-[16px] whitespace-nowrap ${
                     activeItem === item ? "font-bold" : ""
                   }`}
-                  onClick={() => handleNavClick(item)}
                 >
-                  <Link href={`/${item === "home" ? "" : item}`}>
+                  <Link
+                    href={`/${item === "home" ? "" : item}`}
+                    onClick={() => handleNavClick(item)}
+                    className="cursor-pointer"
+                  >
                     {t(item)}
                   </Link>
                 </li>
@@ -111,8 +122,8 @@ const Navbar = () => {
               <li>
                 <Link href="/schedule">
                   <div>
-                    <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#FFD015] text-[#074A6B] font-bold leading-[26px] text-[16px] transition-all hover:bg-white hover:text-[#FFD015]">
-                      BOOK NOW
+                    <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#FFD015] text-[#074A6B] font-bold leading-[26px] text-[16px] transition-all hover:bg-inherit  hover:text-[#FFD015]">
+                      {t("bookNow")}
                     </button>
                   </div>
                 </Link>

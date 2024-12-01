@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 const Highlights = () => {
   const t = useTranslations("Highlights");
   return (
-    <section className="mt-[108px]">
+    <section className="mt-[50px]">
       <MaxWidthWrapper>
         <div className="flex sm:flex-row flex-col items-center justify-between">
           <div className="flex flex-col md:w-[480px] w-full">
@@ -18,7 +18,7 @@ const Highlights = () => {
             </p>
 
             <div className="flex mt-[32px] mb-6 lg:mb-0">
-              <button className="flex h-[44px] min-h-[44px] px-[16px] justify-center items-center gap-[12px] rounded-[12px] border border-[#2463EB] bg-[#2463EB] text-white hover:bg-white hover:text-[#2463EB] transition-colors duration-200">
+              <button className="flex h-[44px] min-h-[44px] px-[16px] justify-center items-center gap-[12px] rounded-[12px] border border-[#2463EB] bg-[#2463EB] text-white hover:bg-inherit  hover:text-[#2463EB] transition-colors duration-200">
                 {t("buttonText")}
               </button>
             </div>

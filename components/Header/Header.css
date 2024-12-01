@@ -3,6 +3,11 @@
   background: url("../../public/headerBg.png") lightgray 50% / cover no-repeat;
   height: 100vh;
 }
+.customBlogClass {
+  position: relative;
+  background: url("../../public/blogHero.jpg") lightgray 50% / cover no-repeat;
+  height: 100vh;
+}
 
 .customHeaderClass::before {
   content: "";
@@ -31,6 +36,12 @@ header > div {
   z-index: 10;
 }
 
+.btnContainerBlog {
+  position: absolute;
+  bottom: 30%;
+  right: 10%;
+}
+
 .learnMoreButton {
   position: relative;
   padding-bottom: 10px; /* Adds spacing between the text and the line */
@@ -48,5 +59,25 @@ header > div {
 }
 
 .learnMoreButton:hover::before {
+  width: 100%; /* Expand to full width on hover */
+}
+
+.learnMoreButtonBlog {
+  position: relative;
+  padding-bottom: 10px; /* Adds spacing between the text and the line */
+  transition: color 0.3s ease; /* Optional: transition for text color on hover */
+}
+
+.learnMoreButtonBlog::before {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Aligns it at the bottom of the button */
+  width: 85%; /* Default line width */
+  height: 1px; /* Thickness of the line */
+  background-color: #fffdf7; /* Line color */
+  transition: width 0.3s ease; /* Transition for width change */
+}
+
+.learnMoreButtonBlog:hover::before {
   width: 100%; /* Expand to full width on hover */
 }

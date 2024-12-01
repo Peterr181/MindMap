@@ -34,10 +34,10 @@ const MentalWellness = () => {
   ];
 
   return (
-    <section className="mt-[108px] mb-[44px]">
+    <section className="mt-[50px] mb-[44px]">
       <MaxWidthWrapper>
         <div>
-          <h2 className="text-center text-[#074A68] font-fontPrimary leading-[42px] font-extrabold sm:text-[56px] text-[38px]">
+          <h2 className="text-center text-[#074A68] font-fontPrimary leading-[42px] font-extrabold sm:text-5xl text-[38px]">
             {t("header")}
           </h2>
           <div className="flex sm:flex-row flex-col items-center justify-center gap-[12px] mt-[64px] text-center">
@@ -47,14 +47,14 @@ const MentalWellness = () => {
                   <Image
                     src={step.imgSrc}
                     alt={step.imgAlt}
-                    width={203}
-                    height={203}
+                    width={170}
+                    height={170}
                   />
                 </div>
-                <h3 className="font-fontSecondary text-[22px] font-semibold tracking-[0.88px] leading-[33px] text-[#074A68] mt-[12px] mb-[12px]">
+                <h3 className="font-fontSecondary text-lg font-semibold tracking-[0.88px] leading-[33px] text-[#074A68] mt-[12px] mb-[12px]">
                   {step.header}
                 </h3>
-                <p className="text-[20px] text-[#074A68] font-fontSecondary font-light sm:w-[70%] w-full mx-auto">
+                <p className="text-base text-[#074A68] font-fontSecondary font-light sm:w-[70%] w-full mx-auto">
                   {step.desc}
                 </p>
               </div>

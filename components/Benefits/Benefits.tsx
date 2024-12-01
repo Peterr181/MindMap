@@ -7,7 +7,7 @@ const Benefits = () => {
   const t = useTranslations("Benefits");
 
   return (
-    <section className="mt-[108px] mb-[64px]">
+    <section className="mt-[50px] mb-[64px]">
       <MaxWidthWrapper>
         <div>
           <h2 className="sm:text-[30px] text-[24px] font-bold text-[#054B4E] mt-3 mb-[64px]">

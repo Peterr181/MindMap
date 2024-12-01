@@ -6,65 +6,55 @@ import Image from "next/image";
 const HowToBook = () => {
   const t = useTranslations("HowToBook");
 
+  const steps = [
+    {
+      imgSrc: "/howtobook1.svg",
+      header: t("firstStepHeader"),
+      desc: t("firstStepDesc"),
+    },
+    {
+      imgSrc: "/howtobook2.svg",
+      header: t("secondStepHeader"),
+      desc: t("secondStepDesc"),
+    },
+    {
+      imgSrc: "/howtobook3.svg",
+      header: t("thirdStepHeader"),
+      desc: t("thirdStepDesc"),
+    },
+  ];
+
   return (
-    <section className="mt-[108px] mb-[44px]">
+    <section className="mt-[50px] mb-[44px]">
       <MaxWidthWrapper>
         <div>
-          <h2 className="text-center text-[#074A68] font-fontPrimary leading-[42px] font-extrabold sm:text-[56px] text-[38px]">
+          <h2 className="text-center text-[#074A68] font-fontPrimary leading-[42px] font-extrabold sm:text-5xl text-[38px]">
             {t("header")}
           </h2>
           <div className="flex md:flex-row flex-col items-start justify-center gap-[12px] mt-[64px] text-center">
-            {/** First Step */}
-            <div className="flex flex-col items-center">
-              <div className="flex justify-center items-center">
-                <Image
-                  src="/howtobook1.svg"
-                  alt="how to book instructions"
-                  width={203}
-                  height={203}
-                />
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className={`flex flex-col items-center ${
+                  index !== 0 ? "md:mt-0 mt-[32px]" : ""
+                }`}
+              >
+                <div className="flex justify-center items-center">
+                  <Image
+                    src={step.imgSrc}
+                    alt="how to book instructions"
+                    width={170}
+                    height={170}
+                  />
+                </div>
+                <h3 className="font-fontSecondary text-lg font-semibold tracking-[0.88px] leading-[33px] text-[#074A68] mt-[12px] mb-[12px]">
+                  {step.header}
+                </h3>
+                <p className="text-base text-[#074A68] font-fontSecondary font-light sm:w-[70%] w-full mx-auto">
+                  {step.desc}
+                </p>
               </div>
-              <h3 className="font-fontSecondary text-[22px] font-semibold tracking-[0.88px] leading-[33px] text-[#074A68] mt-[12px] mb-[12px]">
-                {t("firstStepHeader")}
-              </h3>
-              <p className="text-[20px] text-[#074A68] font-fontSecondary font-light sm:w-[70%] w-full mx-auto">
-                {t("firstStepDesc")}
-              </p>
-            </div>
-            {/** Second Step */}
-            <div className="flex flex-col items-center md:mt-0 mt-[32px]">
-              <div className="flex justify-center items-center">
-                <Image
-                  src="/howtobook2.svg"
-                  alt="how to book instructions"
-                  width={203}
-                  height={203}
-                />
-              </div>
-              <h3 className="font-fontSecondary text-[22px] font-semibold tracking-[0.88px] leading-[33px] text-[#074A68] mt-[12px] mb-[12px]">
-                {t("secondStepHeader")}
-              </h3>
-              <p className="text-[20px] text-[#074A68] font-fontSecondary font-light sm:w-[70%] w-full mx-auto">
-                {t("secondStepDesc")}
-              </p>
-            </div>
-            {/** Third Step */}
-            <div className="flex flex-col items-center md:mt-0 mt-[32px]">
-              <div className="flex justify-center items-center">
-                <Image
-                  src="/howtobook3.svg"
-                  alt="how to book instructions"
-                  width={203}
-                  height={203}
-                />
-              </div>
-              <h3 className="font-fontSecondary text-[22px] font-semibold tracking-[0.88px] leading-[33px] text-[#074A68] mt-[12px] mb-[12px]">
-                {t("thirdStepHeader")}
-              </h3>
-              <p className="text-[20px] text-[#074A68] font-fontSecondary font-light sm:w-[70%] w-full mx-auto">
-                {t("thirdStepDesc")}
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </MaxWidthWrapper>
