@@ -68,22 +68,22 @@ const Page = async ({ params }: PageProps) => {
         );
       },
       [BLOCKS.HEADING_1]: (node: any, children: any) => (
-        <h1 className="text-[#074A68] font-fontPrimary sm:text-[57px] text-[40px] font-extrabold leading-[110%] tracking-[-0.57px] mb-[32px]">
+        <h1 className="text-[#074A68] w-full font-fontPrimary sm:text-[57px] text-[30px] font-extrabold leading-[110%] tracking-[-0.57px] mb-[32px]">
           {children}
         </h1>
       ),
       [BLOCKS.HEADING_2]: (node: any, children: any) => (
-        <h2 className="text-[#074A68] font-fontPrimary sm:text-[50px] text-[36px]  font-extrabold leading-[110%] tracking-[-0.5px] mb-[32px]">
+        <h2 className="text-[#074A68] w-full font-fontPrimary sm:text-[50px] text-[26px]  font-extrabold leading-[110%] tracking-[-0.5px] mb-[32px]">
           {children}
         </h2>
       ),
       [BLOCKS.HEADING_3]: (node: any, children: any) => (
-        <h3 className="text-[#074A68] font-fontPrimary sm:text-[50px] text-[36px] font-extrabold leading-[110%] tracking-[-0.5px] mb-[32px]">
+        <h3 className="text-[#074A68] w-full font-fontPrimary sm:text-[50px] text-[26px] font-extrabold leading-[110%] tracking-[-0.5px] mb-[32px]">
           {children}
         </h3>
       ),
       [BLOCKS.PARAGRAPH]: (node: any, children: any) => (
-        <p className="text-[#074A68] font-fontSecondary sm:text-[18px] text-[16px] font-light leading-[140%] mb-[20px] mt-[20px]">
+        <p className="text-[#074A68] text-justify  font-fontSecondary sm:text-[18px] text-[16px] font-light leading-[140%] mb-[20px] mt-[20px]">
           {children}
         </p>
       ),
@@ -127,28 +127,6 @@ const Page = async ({ params }: PageProps) => {
         </th>
       ),
     },
-  };
-
-  const sharePost = (platform: string) => {
-    const url = window.location.href;
-    const title = document.title;
-    let shareUrl = "";
-
-    switch (platform) {
-      case "pinterest":
-        shareUrl = `https://pinterest.com/pin/create/button/?url=${url}&description=${title}`;
-        break;
-      case "instagram":
-        shareUrl = `https://www.instagram.com/?url=${url}`;
-        break;
-      case "linkedin":
-        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-        break;
-      default:
-        break;
-    }
-
-    window.open(shareUrl, "_blank");
   };
 
   return (
@@ -198,7 +176,7 @@ const Page = async ({ params }: PageProps) => {
           </div>
         </div>
       </div>
-      <div className="max-w-[800px] mx-auto text-justify px-4 sm:px-8">
+      <div className="max-w-[800px] mx-auto px-4 sm:px-8">
         {post.testrich &&
           documentToReactComponents(post.testrich as Document, options)}
       </div>
