@@ -10,7 +10,7 @@ import LanguageNav from "@/components/LanguageNav/LanguageNav";
 
 export const metadata: Metadata = {
   description:
-    "At MindMap, we believe in the transformative power of therapy to help you achieve balance and personal growth. Whether you are dealing with anxiety, depression, trauma, or simply looking to enhance your life skills.",
+    "At MindMap, we harness the power of therapy to help you find balance and personal growth, whether overcoming anxiety, depression, trauma, or enhancing life skills.",
   metadataBase: new URL("https://themindmap.eu"),
   keywords: [
     "therapy",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "life skills",
   ],
   title: {
-    default: "CBTC | MindMap",
+    default: "MindMap | Transformative Therapy for Growth and Balance",
     template: "%s | MindMap",
   },
   verification: {
