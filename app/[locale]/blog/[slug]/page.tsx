@@ -62,8 +62,8 @@ const Page = async ({ params }: PageProps) => {
       [BLOCKS.EMBEDDED_ASSET]: (node: any) => {
         const { file, title } = node.data.target.fields;
         return (
-          <div className="flex justify-center">
-            <img src={file.url} alt={title} />
+          <div className="flex justify-center lg:w-[750px] lg:h-[496px] w-full h-full">
+            <img src={file.url} alt={title} className="w-full h-full" />
           </div>
         );
       },
