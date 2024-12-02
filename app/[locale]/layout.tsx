@@ -9,9 +9,30 @@ import Navbar from "@/components/Navbar/Navbar";
 import LanguageNav from "@/components/LanguageNav/LanguageNav";
 
 export const metadata: Metadata = {
-  title: "CBTC | MindMap",
   description:
     "At MindMap, we believe in the transformative power of therapy to help you achieve balance and personal growth. Whether you are dealing with anxiety, depression, trauma, or simply looking to enhance your life skills.",
+  metadataBase: new URL("https://themindmap.eu"),
+  keywords: [
+    "therapy",
+    "CBT",
+    "mindfulness",
+    "mindmap",
+    "cognitive behavioral therapy",
+    "psychotherapy",
+    "counseling",
+    "mental health",
+    "anxiety",
+    "depression",
+    "trauma",
+    "life skills",
+  ],
+  title: {
+    default: "CBTC | MindMap",
+    template: "%s | MindMap",
+  },
+  verification: {
+    google: "m4uUw1iSSXiR3S-dAMDsT8BOkQNK85nlmF3lX9edydk",
+  },
 };
 
 export default async function LocaleLayout({
