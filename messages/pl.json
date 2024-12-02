@@ -70,7 +70,8 @@
     "shareThisPost": "Udostępnij ten post",
     "messageSending": "Wysyłanie...",
     "messageSuccess": "Zostałeś/aś zapisany/a na nasz newsletter!",
-    "messageFail": "Coś poszło nie tak. Spróbuj ponownie."
+    "messageFail": "Coś poszło nie tak. Spróbuj ponownie.",
+    "noPostsMessage": "Brak postów. Wróć później."
   },
   "SpecialistProfile": {
     "experience": "Doświadczenie Zawodowe",

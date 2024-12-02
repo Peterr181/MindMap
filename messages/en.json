@@ -192,7 +192,8 @@
     "shareThisPost": "Share this post",
     "messageSending": "Sending...",
     "messageSuccess": "You have successfully subscribed to our newsletter!",
-    "messageFail": " Failed to send message. Please try again."
+    "messageFail": " Failed to send message. Please try again.",
+    "noPostsMessage": "No posts found."
   },
   "Faq": {
     "header": "Frequently Asked Questions",

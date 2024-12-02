@@ -14,8 +14,8 @@ const Blog = () => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
   const pathname = usePathname();
-  const isPolish = pathname.startsWith("/pl");
-  const isEnglish = pathname.startsWith("/en");
+  const isPolish = pathname?.startsWith("/pl") ?? false;
+  const isEnglish = pathname?.startsWith("/en") ?? false;
   const categoryTranslations: { [key: string]: string } = {
     mindfulness: t("mindfulness"),
     sad: t("sad"),
@@ -135,9 +135,13 @@ const Blog = () => {
           {t("descriptionSecond")}
         </p>
         <div className="mt-[32px] flex flex-col gap-[60px]">
-          {posts.map((post, index) => (
-            <BlogPost key={index} post={post} />
-          ))}
+          {posts.length > 0 ? (
+            posts.map((post, index) => <BlogPost key={index} post={post} />)
+          ) : (
+            <p className="text-center text-[#074A68] font-fontSecondary font-light text-lg leading-[30.8px]">
+              {t("noPostsMessage")}
+            </p>
+          )}
         </div>
         {/* <div className="flex items-center justify-center mt-[32px] gap-[16px]">
           <div className="w-[56px] h-[56px] p-[16px] flex items-center justify-center border border-[#074A68] rounded-full cursor-pointer">

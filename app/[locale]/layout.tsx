@@ -8,9 +8,23 @@ import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar/Navbar";
 import LanguageNav from "@/components/LanguageNav/LanguageNav";
 
+const localizedMetadata: Record<
+  string,
+  { title: string; description: string }
+> = {
+  en: {
+    title: "MindMap | Transformative Therapy for Growth and Balance",
+    description:
+      "At MindMap, we harness the power of therapy to help you find balance and personal growth, whether overcoming anxiety, depression, trauma, or enhancing life skills.",
+  },
+  pl: {
+    title: "MindMap | Terapia transformacyjna dla wzrostu i równowagi",
+    description:
+      "W MindMap wykorzystujemy moc terapii, aby pomóc Ci znaleźć równowagę i osobisty rozwój, pokonując lęki, depresję, traumę lub rozwijając umiejętności życiowe.",
+  },
+};
+
 export const metadata: Metadata = {
-  description:
-    "At MindMap, we harness the power of therapy to help you find balance and personal growth, whether overcoming anxiety, depression, trauma, or enhancing life skills.",
   metadataBase: new URL("https://themindmap.eu"),
   keywords: [
     "therapy",
@@ -27,7 +41,7 @@ export const metadata: Metadata = {
     "life skills",
   ],
   title: {
-    default: "MindMap | Transformative Therapy for Growth and Balance",
+    default: localizedMetadata.en.title,
     template: "%s | MindMap",
   },
   verification: {
@@ -40,22 +54,27 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: "en" | "pl" };
 }) {
-  // Await params to get the locale value
   const { locale } = await params;
 
-  // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  // Ensure the locale is valid
+  if (!routing.locales.includes(locale)) {
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
+
+  // Retrieve the appropriate localized metadata
+  const { title, description } =
+    localizedMetadata[locale] || localizedMetadata.en;
 
   return (
     <html lang={locale} className="font-title">
+      <head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </head>
       <body>
         <NextIntlClientProvider messages={messages}>
           <LanguageNav />
