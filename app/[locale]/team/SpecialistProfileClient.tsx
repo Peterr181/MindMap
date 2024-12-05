@@ -3,6 +3,7 @@ import { useState } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { ServiceCard } from "@/components/Services/ServiceCard"; // Import the ServiceCard component
 import Image from "next/image";
+import { useLocale } from "next-intl";
 
 interface Specialist {
   name: string;
@@ -42,18 +43,32 @@ const SpecialistProfileClient: React.FC<SpecialistProfileClientProps> = ({
   appointmentText, // Destructure appointmentText prop
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [iframeSrc, setIframeSrc] = useState("");
+  const [iframeSrc, setIframeSrc] = useState(""); // For iframe source in modal
+  const locale = useLocale();
+
+  const getLocaleIframeSrc = (slug: string, lang: string) => {
+    let domain;
+    if (slug === "specialistOne") {
+      domain = lang === "en" ? "kasiahnowak-en" : "kasiahnowak";
+    } else {
+      domain = lang === "en" ? "kasianowak-en" : "kasianowak";
+    }
+    return `https://${domain}.youcanbook.me`;
+  };
 
   const handleServiceClick = () => {
-    const domain = slug === "specialistOne" ? "kasiahnowak" : "kasianowak";
-    setIframeSrc(`https://${domain}.youcanbook.me`);
+    // Get iframe source with locale
+    setIframeSrc(getLocaleIframeSrc(slug, locale));
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
-    setIframeSrc("");
+    setIframeSrc(""); // Clear iframeSrc to avoid residual iframe
   };
+
+  // Default iframe (without modal) logic
+  const defaultIframeSrc = getLocaleIframeSrc(slug, locale); // Use current locale
 
   return (
     <section className="mt-[32px]">
@@ -77,18 +92,21 @@ const SpecialistProfileClient: React.FC<SpecialistProfileClientProps> = ({
             unoptimized
           />
         </div>
+
         <h3 className="text-[#074A68] font-extrabold sm:text-[40px] text-[30px] mt-[32px] text-center lg:text-left">
           {experienceTitle}
         </h3>
         <p className="text-lg text-[#074A68] text-center lg:text-left sm:p-0 p-3 mt-[16px]">
           {specialist.experience}
         </p>
+
         <h3 className="text-[#074A68] font-extrabold sm:text-[40px] text-[30px] mt-[32px] text-center lg:text-left">
           {approachTitle}
         </h3>
         <p className="text-lg text-[#074A68] text-center lg:text-left sm:p-0 p-3 mt-[16px]">
           {specialist.approach}
         </p>
+
         <h3 className="text-[#074A68] font-extrabold sm:text-[40px] text-[30px] mt-[32px] text-center lg:text-left">
           {areasSupportedTitle}
         </h3>
@@ -97,9 +115,11 @@ const SpecialistProfileClient: React.FC<SpecialistProfileClientProps> = ({
             <li key={index}>{area}</li>
           ))}
         </ul>
+
         <h3 className="text-[#074A68] font-extrabold sm:text-[50px] text-[38px] mt-[64px] text-center">
           {sessionTypeTitle}
         </h3>
+
         <div className="flex flex-wrap justify-center gap-[16px]">
           {services.map((service, index) => (
             <ServiceCard
@@ -108,45 +128,49 @@ const SpecialistProfileClient: React.FC<SpecialistProfileClientProps> = ({
               description={service.description}
               price="180 zł" // Assuming price is part of the service object
               isPrimaryButton={service.isPrimaryButton}
-              onClick={handleServiceClick} // Use handleServiceClick
+              onClick={() => handleServiceClick()} // Pass language (default 'en')
             />
           ))}
         </div>
+
         <p className="text-lg text-center mt-[48px] text-[#074A68]">
           {appointmentText}
         </p>
-        <div className="text-lg text-center mt-[16px] sm:p-0 p-6">
-          <iframe
-            src={`https://${
-              slug === "specialistOne" ? "kasiahnowak" : "kasianowak"
-            }.youcanbook.me`}
-            className="w-full h-[80vh]"
-            frameBorder="0"
-          ></iframe>
-        </div>
-      </MaxWidthWrapper>
 
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 sm:p-6 p-6">
-          <div className="bg-white rounded-lg overflow-hidden w-full max-w-4xl">
-            <div className="flex justify-end p-2">
-              <button onClick={closeModal} className="text-black">
-                <Image
-                  src="/closeIcon.svg"
-                  alt="Close icon"
-                  width={32}
-                  height={32}
-                />
-              </button>
-            </div>
+        {/* Default iframe rendered on page load */}
+        {!isModalOpen && (
+          <div className="text-lg text-center mt-[16px] sm:p-0 p-6">
             <iframe
-              src={iframeSrc}
+              src={defaultIframeSrc}
               className="w-full h-[80vh]"
               frameBorder="0"
             ></iframe>
           </div>
-        </div>
-      )}
+        )}
+
+        {/* Modal iframe is displayed when modal is open */}
+        {isModalOpen && iframeSrc && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 sm:p-6 p-6">
+            <div className="bg-white rounded-lg overflow-hidden w-full max-w-4xl">
+              <div className="flex justify-end p-2">
+                <button onClick={closeModal} className="text-black">
+                  <Image
+                    src="/closeIcon.svg"
+                    alt="Close icon"
+                    width={32}
+                    height={32}
+                  />
+                </button>
+              </div>
+              <iframe
+                src={iframeSrc}
+                className="w-full h-[80vh]"
+                frameBorder="0"
+              ></iframe>
+            </div>
+          </div>
+        )}
+      </MaxWidthWrapper>
     </section>
   );
 };

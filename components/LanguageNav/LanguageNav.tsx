@@ -13,7 +13,7 @@ const LanguageNav = () => {
   const handleLanguageToggle = () => {
     const newLocale = isEnglish ? "pl" : "en";
     setIsEnglish(!isEnglish);
-    const path = pathname.split("/").slice(2).join("/");
+    const path = pathname ? pathname.split("/").slice(2).join("/") : "";
     router.push(`/${newLocale}/${path}`);
   };
 
