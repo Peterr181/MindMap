@@ -15,7 +15,7 @@ const Services = () => {
             {t("header")}
           </h2>
 
-          <div className="grid lg:grid-cols-3 grid-cols-1 mt-[64px] gap-[64px]">
+          <div className="grid lg:grid-cols-3 grid-cols-1 mt-[64px] lg:gap-[64px] gap-[16px]">
             <Service
               color="#CAE6F2"
               icon="/electricIcon.svg"
