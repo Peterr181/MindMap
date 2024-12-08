@@ -72,6 +72,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className="font-title">
       <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <title>{title}</title>
         <meta name="description" content={description} />
       </head>
