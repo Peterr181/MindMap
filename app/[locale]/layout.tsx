@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     template: "%s | MindMap",
   },
   verification: {
-    google: "m4uUw1iSSXiR3S-dAMDsT8BOkQNK85nlmF3lX9edydk",
+    google: "dks_Lfi_CZPmIfP3IhrqMM1vmsU7wCaeDxSm7rVMZN0",
   },
 };
 
