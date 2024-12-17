@@ -23,8 +23,6 @@ const Team = () => {
   const tSpecialistProfile = useTranslations("SpecialistProfile");
   const locale = useLocale();
 
-  console.log(locale);
-
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
 
