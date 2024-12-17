@@ -51,8 +51,8 @@ const Page = async ({ params }: PageProps) => {
     mindfulness: t("mindfulness"),
     sad: t("sad"),
     happy: t("happy"),
-    copingSkills: t("copingSkills"),
-    mentalHealth: t("mentalHealth"),
+    copingskills: t("copingSkills"),
+    mentalhealth: t("mental"),
     anxiety: t("anxiety"),
     selfCare: t("selfCare"),
   };

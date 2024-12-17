@@ -20,8 +20,8 @@ const Blog = () => {
     mindfulness: t("mindfulness"),
     sad: t("sad"),
     happy: t("happy"),
-    copingSkills: t("copingSkills"),
-    mentalHealth: t("mentalHealth"),
+    copingskills: t("copingSkills"),
+    mentalhealth: t("mental"),
     anxiety: t("anxiety"),
     selfCare: t("selfCare"),
   };
@@ -80,6 +80,9 @@ const Blog = () => {
       setStatus("error");
     }
   };
+  console.log("Fetched Posts:", posts);
+
+  console.log("Categories:", categories);
 
   return (
     <>
@@ -116,16 +119,19 @@ const Blog = () => {
             {t("tags")}
           </p>
           <ul className="flex flex-wrap items-center gap-[8px] sm:gap-[16px]">
-            {categories.map((category, index) => (
-              <li
-                key={index}
-                className="rounded-[30px] border border-[#EAEBF0] p-[4px] sm:p-[8px] bg-[#fff] text-[12px] sm:text-[14px] font-semibold leading-[16px] sm:leading-[20px] text-[#252525]"
-              >
-                {categoryTranslations[
-                  category.toLowerCase().replace(/\s+/g, "")
-                ] || category}
-              </li>
-            ))}
+            {categories.map((category, index) => {
+              const key = category.toLowerCase().replace(/\s+/g, ""); // Normalize category key
+              const translation = categoryTranslations[key] || category;
+
+              return (
+                <li
+                  key={index}
+                  className="rounded-[30px] border border-[#EAEBF0] p-[4px] sm:p-[8px] bg-[#fff] text-[12px] sm:text-[14px] font-semibold leading-[16px] sm:leading-[20px] text-[#252525]"
+                >
+                  {translation}
+                </li>
+              );
+            })}
           </ul>
         </div>
         <h2 className="text-center text-[#074A68] font-fontPrimary leading-[75px] font-extrabold sm:text-5xl text-[38px] tracking-[-0.56px] mt-[32px]">

@@ -196,7 +196,7 @@ const Team = () => {
           <h2 className="text-center text-[#074A68] font-fontPrimary leading-[75px] font-extrabold sm:text-5xl text-[38px] tracking-[-0.56px]">
             {t("headerThird")}
           </h2>
-          <p className="mt-[32px] text-center text-[#074A68] font-fontSecondary font-light text-lg leading-[30.8px] mb-[60px] pt-[32px] pb-[32px]">
+          <p className="mt-[32px] text-center text-[#074A68] font-fontSecondary font-light text-lg leading-[30.8px] mb-[60px]  pb-[32px]">
             {t("descriptionThird")}
           </p>
           <div className="flex lg:flex-row flex-col gap-[16px] items-center justify-center">

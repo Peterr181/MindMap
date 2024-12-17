@@ -84,7 +84,7 @@ const Navbar = () => {
           ))}
           {!notBookNow && (
             <li>
-              <Link href="/team">
+              <Link href="/team" onClick={() => handleNavClick("bookNow")}>
                 <div>
                   <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#FFD015] text-[#074A6B] font-bold leading-[26px] text-[16px] transition-all hover:bg-inherit  hover:text-[#FFD015] whitespace-nowrap ">
                     {t("bookNow")}
@@ -126,7 +126,7 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <Link href="/team">
+                <Link href="/team" onClick={() => handleNavClick("bookNow")}>
                   <div>
                     <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#FFD015] text-[#074A6B] font-bold leading-[26px] text-[16px] transition-all hover:bg-inherit  hover:text-[#FFD015]">
                       {t("bookNow")}
