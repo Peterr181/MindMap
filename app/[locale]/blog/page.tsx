@@ -80,9 +80,6 @@ const Blog = () => {
       setStatus("error");
     }
   };
-  console.log("Fetched Posts:", posts);
-
-  console.log("Categories:", categories);
 
   return (
     <>
