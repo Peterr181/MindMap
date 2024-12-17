@@ -111,9 +111,9 @@ const SpecialistProfileClient: React.FC<SpecialistProfileClientProps> = ({
           {areasSupportedTitle}
         </h3>
         <ul className="text-lg text-[#074A68] text-center lg:text-left sm:p-0 p-3 list-disc list-inside mt-[16px]">
-          {specialist.areas.map((area, index) => (
-            <li key={index}>{area}</li>
-          ))}
+          {specialist.areas.map(
+            (area, index) => area && <li key={index}>{area}</li>
+          )}
         </ul>
 
         <h3 className="text-[#074A68] font-extrabold sm:text-[50px] text-[38px] mt-[64px] text-center">

@@ -46,11 +46,12 @@ export default async function SpecialistProfileServer({
       experience: t("specialistSecond.experience"),
       approach: t("specialistSecond.approach"),
       areas: [
-        t("specialistOne.area1"),
-        t("specialistOne.area2"),
-        t("specialistOne.area3"),
-        t("specialistOne.area4"),
-        t("specialistOne.area5"),
+        t("specialistSecond.area1"),
+        t("specialistSecond.area2"),
+        t("specialistSecond.area3"),
+        t("specialistSecond.area4"),
+        t("specialistSecond.area5"),
+        t("specialistSecond.area6"),
       ],
       specialties: [
         t("specialistSecond.specialtyA"),

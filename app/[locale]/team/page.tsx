@@ -4,6 +4,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import SpecialistCard from "@/components/SpecialistCard/SpecialistCard";
+import { useLocale } from "next-intl";
 
 type SessionType = {
   imageSrc: string;
@@ -19,6 +20,10 @@ type SessionType = {
 
 const Team = () => {
   const t = useTranslations("Teams");
+  const tSpecialistProfile = useTranslations("SpecialistProfile");
+  const locale = useLocale();
+
+  console.log(locale);
 
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
@@ -48,16 +53,24 @@ const Team = () => {
 
   // Example data for the specialist
   const specialties: string[] = [
-    "Specializes in eating disorders, anxiety, and insomnia.",
-    "Psychotherapist during certification at the SWPS School of Cognitive-Behavioral Therapy (PTTPB).",
-    "Skilled in integrating CBT, mindfulness, and schema therapy, with professional experience in psychiatric clinics and therapy centers.",
+    tSpecialistProfile("specialistOne.specialty1"),
+    tSpecialistProfile("specialistOne.specialty2"),
+    tSpecialistProfile("specialistOne.specialty3"),
   ];
 
+  if (locale === "pl") {
+    specialties.push(tSpecialistProfile("specialistOne.specialty4"));
+  }
+
   const specialties2: string[] = [
-    "Specializes in PTSD, anxiety, and mood disorders.",
-    "Psychotherapist in training at the Crescentia School of Psychotherapy (PTTPB).",
-    "Specializing in CBT, with certifications from the Feeling Good Institute (Level 1) and extensive experience gained through HR roles, psychological internships, counseling workshops, and therapeutic practice.",
+    tSpecialistProfile("specialistSecond.specialty1"),
+    tSpecialistProfile("specialistSecond.specialty2"),
+    tSpecialistProfile("specialistSecond.specialty3"),
   ];
+
+  if (locale === "pl") {
+    specialties2.push(tSpecialistProfile("specialistSecond.specialty4"));
+  }
 
   // Session types data
   const sessionTypes: SessionType[] = [

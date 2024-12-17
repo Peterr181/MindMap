@@ -60,6 +60,9 @@ const Mission = () => {
             <p className="text-[#074A68] text-lg font-light font-fontSecondary leading-[30.8px] tracking-[-0.22px]  text-center lg:text-start ">
               {t("descriptionThirdSecond")}
             </p>
+            <p className="text-[#074A68] text-lg font-light font-fontSecondary leading-[30.8px] tracking-[-0.22px]  text-center lg:text-start mt-[47px] ">
+              {t("descriptionThirdThird")}
+            </p>
           </div>
           <div className="lg:w-[808px] lg:h-[390px] rounded-[32px] w-full h-full flex  justify-center mx-auto mb-3 lg:mb-0 ">
             <Image
@@ -70,7 +73,7 @@ const Mission = () => {
             />
           </div>
           <p className="text-[#074A68] text-lg font-light font-fontSecondary leading-[30.8px] tracking-[-0.22px]  text-center  ">
-            {t("descriptionThirdThird")}
+            {t("descriptionThirdQuad")}
           </p>
         </div>
       </MaxWidthWrapper>

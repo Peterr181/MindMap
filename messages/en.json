@@ -110,7 +110,8 @@
     "headerThird": "Meet the Therapist Behind MindMap",
     "descriptionThirdFirst": "MindMap Cognitive Behavioral Therapy Center was founded by a team of dedicated psychologists who share a unique connection — in name and vision! While this might lead to a bit of confusion over coffee orders, we're thrilled to share more than just a name. Our shared eagerness to deliver top-quality therapy has been our guiding force.",
     "descriptionThirdSecond": "We are passionate about providing you with the best therapy and counseling. We ensure this by constantly updating our skills through various courses. We are undergoing training or certification in cognitive-behavioral psychotherapy schools, which authorizes us to conduct psychotherapy and psychological counseling. Additionally, our work is subjected to regular supervision, which guarantees that you receive the highest support and care.",
-    "descriptionThirdThird": "At MindMap, we are your partners on the path to mental wellness. Welcome to a community that cares for your mind as much as you do."
+    "descriptionThirdThird": "And in case you’re wondering about the cheery tail or happy paws you might spot in our team photo—that’s Leon, our Personal Happiness Officer! Leon’s warm presence is known to brighten even the toughest days, offering a little extra emotional support (and perhaps some tail wags!). He's definitely a valued part of the MindMap team.",
+    "descriptionThirdQuad": "At MindMap, we are your partners on the path to mental wellness. Welcome to a community that cares for your mind as much as you do."
   },
   "SpecialistProfile": {
     "experience": "Professional Background",
@@ -139,7 +140,10 @@
       "area7": "Insomnia",
       "specialtyA": "Specialty A",
       "specialtyB": "Specialty B",
-      "description": "Kasia specializes in ..."
+      "description": "Kasia specializes in ...",
+      "specialty1": "Specializes in eating disorders, anxiety, and insomnia.",
+      "specialty2": "Psychotherapist during certification at the SWPS School of Cognitive-Behavioral Therapy (PTTPB).",
+      "specialty3": "Skilled in integrating CBT, mindfulness, and schema therapy, with professional experience in psychiatric clinics and therapy centers."
     },
     "specialistSecond": {
       "name": "Kasia Nowak",
@@ -147,13 +151,17 @@
       "experience": "I am a psychologist specializing in Cognitive Behavioral Therapy (CBT) and currently undergoing a 4-year certification program at the Crescentia School of Psychotherapy. I hold a Master’s degree in Psychology from Opole University and have achieved Level 1 TEAM-CBT Therapist Certification from the Feeling Good Institute, a leading organization in mental health professional development. My work as a therapist is regularly supervised to ensure the highest quality support for my clients. I have gained valuable experience through internships at the Psychological and Pedagogical Counseling Centre and by leading workshops focused on enhancing soft skills in young individuals. Additionally, I have a professional background in HR, having worked in both startups and multinational corporations which has helped me understand the diverse challenges individuals face in their personal and professional lives.",
       "approach": "My approach is rooted in Cognitive Behavioral Therapy. Central to my practice is fostering a relationship built on trust, safety, and acceptance. I believe in one of the core principles of CBT therapy—acknowledging that clients are the experts on their own lives. My role is to provide the appropriate tools, guidance, and compassionate support to help clients address their challenges and achieve transformation.",
       "area1": "Social Anxiety",
-      "area2": "Trauma and PTSD",
-      "area3": "Insomnia",
-      "area4": "Depression and Mood Disorders",
-      "area5": "Stress and Workplace Challenges",
+      "area2": "Anxiety Disorders (phobias, panic disorder)",
+      "area3": "Trauma and PTSD",
+      "area4": "Insomnia",
+      "area5": "Depression and Mood Disorders",
+      "area6": "Stress and Workplace Challenges",
       "specialtyA": "Specialty A",
       "specialtyB": "Specialty B",
-      "description": "Kasia specializes in ..."
+      "description": "Kasia specializes in ...",
+      "specialty1": "Specializes in PTSD, anxiety, and mood disorders.",
+      "specialty2": "Psychotherapist in training at the Crescentia School of Psychotherapy (PTTPB).",
+      "specialty3": "Specializing in CBT, with certifications from the Feeling Good Institute (Level 1) and extensive experience gained through HR roles, psychological internships, counseling workshops, and therapeutic practice."
     }
   },
   "BlogIntroduction": {
