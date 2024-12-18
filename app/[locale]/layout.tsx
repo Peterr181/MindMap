@@ -15,12 +15,12 @@ const localizedMetadata: Record<
   en: {
     title: "MindMap | Transformative Therapy for Growth and Balance",
     description:
-      "At MindMap, we harness the power of therapy to help you find balance and personal growth, whether overcoming anxiety, depression, trauma, or enhancing life skills.",
+      "At TheMindMap, we harness the power of therapy to help you find balance and personal growth, whether overcoming anxiety, depression, trauma, or enhancing life skills.",
   },
   pl: {
     title: "MindMap | Terapia transformacyjna dla wzrostu i równowagi",
     description:
-      "W MindMap wykorzystujemy moc terapii, aby pomóc Ci znaleźć równowagę i osobisty rozwój, pokonując lęki, depresję, traumę lub rozwijając umiejętności życiowe.",
+      "W TheMindMap wykorzystujemy moc terapii, aby pomóc Ci znaleźć równowagę i osobisty rozwój, pokonując lęki, depresję, traumę lub rozwijając umiejętności życiowe.",
   },
 };
 
