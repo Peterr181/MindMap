@@ -17,12 +17,12 @@ const Footer = () => {
                 {t("services")}
               </h4>
               <ul className="flex flex-col gap-[16px]">
-                <Link href="/schedule">
+                <Link href="/team">
                   <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] hover:font-bold transition-all duration-100 ">
                     {t("therapy")}
                   </li>
                 </Link>
-                <Link href="/schedule">
+                <Link href="/team">
                   <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] hover:font-bold transition-all duration-100 ">
                     {t("consultation")}
                   </li>
@@ -84,7 +84,13 @@ const Footer = () => {
           <div className="flex sm:flex-row flex-col items-center gap-[20px] mt-[40px] mb-[40px]">
             <Link href="/">
               <div className="flex items-center gap-2">
-                <Image src="/mainLogo.png" alt="logo" width={120} height={74} quality={100} />
+                <Image
+                  src="/mainLogo.png"
+                  alt="logo"
+                  width={120}
+                  height={74}
+                  quality={100}
+                />
               </div>
             </Link>
             <div>

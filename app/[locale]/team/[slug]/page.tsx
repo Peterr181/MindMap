@@ -19,7 +19,7 @@ export default async function SpecialistProfileServer({
       name: t("specialistOne.name"),
       schoolName: t("specialistOne.schoolName"),
 
-      imageSrc: "/kasia1main.jpg",
+      imageSrc: "/kasia11main.jpg",
       experience: t("specialistOne.experience"),
       approach: t("specialistOne.approach"),
       areas: [

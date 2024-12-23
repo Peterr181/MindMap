@@ -111,7 +111,7 @@ const Team = () => {
   const SpecialistCards = () => (
     <>
       <SpecialistCard
-        imageSrc="/kasia1.jpg"
+        imageSrc="/kasia11.jpg"
         name="Kasia H. Nowak"
         specialties={specialties}
         imagePosition="left"

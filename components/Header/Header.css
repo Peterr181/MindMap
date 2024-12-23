@@ -5,7 +5,7 @@
 }
 .customBlogClass {
   position: relative;
-  background: url("../../public/blogHero.jpg") lightgray 50% / cover no-repeat;
+  background: url("../../public/blogbg3.jpg") lightgray 50% / cover no-repeat;
   height: 100vh;
 }
 

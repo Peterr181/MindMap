@@ -39,7 +39,7 @@ const Page = async ({ params }: PageProps) => {
   const getAuthorImage = (author: string) => {
     switch (author) {
       case "Kasia H. Nowak":
-        return "/kasia1main.jpg";
+        return "/kasia11main.jpg";
       case "Kasia Nowak":
         return "/KasiaNowak1.jpg";
       default:

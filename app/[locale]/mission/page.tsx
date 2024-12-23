@@ -10,7 +10,7 @@ const Mission = () => {
     <section className="mt-[32px]">
       <MaxWidthWrapper>
         <div className="flex flex-col lg:flex-row items-center lg:gap-[64px] gap-[32px] w-full">
-          <div className="lg:w-[459px] lg:h-[595px] w-full h-full flex lg:justify-start justify-center mb-3 lg:mb-0 ">
+          <div className="lg:w-[459px] lg:h-[595px] w-full h-full lg:flex lg:justify-start justify-center mb-3 lg:mb-0 hidden">
             <Image
               src="/missionFirst.png"
               alt="our mission image"
@@ -29,7 +29,7 @@ const Mission = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row items-center lg:gap-[64px] gap-[32px] w-full mt-[80px]">
+        <div className="flex flex-col lg:flex-row items-center lg:gap-[64px] gap-[32px] w-full lg:mt-[80px] mt-0">
           <div className="lg:w-1/2 lg:mt-0 mt-6 text-left lg:ml-9 ml-0">
             <h2 className="  text-[#074A68] font-fontPrimary leading-[75px] font-extrabold  sm:text-[42px] text-[30px] tracking-[-0.68px] mb-[16px] text-center lg:text-start">
               {t("headerSecond")}
@@ -49,7 +49,7 @@ const Mission = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col  lg:gap-[64px] gap-[32px] w-full mt-[80px]">
+        <div className="flex flex-col  lg:gap-[64px] gap-[32px] w-full lg:mt-[80px] mt-0">
           <div className="text-center lg:mt-0 mt-6  lg:ml-9 ml-0">
             <h2 className="  text-[#074A68] font-fontPrimary leading-[75px] font-extrabold  sm:text-[42px] text-[38px] tracking-[-0.68px] mb-[32px]  text-center ">
               {t("headerThird")}

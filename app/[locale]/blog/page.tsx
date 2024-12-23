@@ -84,14 +84,10 @@ const Blog = () => {
   return (
     <>
       <section className="h-screen bg-cover customBlogClass">
-        <div className="flex flex-col lg:justify-start justify-center lg:items-start items-center  flex-grow text-center centeredContent lg:p-0 p-6">
-          <h1 className="text-[36px] sm:text-7xl text-[#FCFCFC] tracking-wide font-fontPrimary font-extrabold lg:mt-[128px] mt-[0px] lg:ml-[128px] ml-[0px] lg:w-[55%] w-full">
+        <div className="flex flex-col lg:justify-start justify-center lg:items-start items-center  flex-grow text-center lg:centeredContent lg:p-0 p-6">
+          <h1 className="text-[36px] sm:text-7xl text-[#FCFCFC] tracking-wide font-fontPrimary font-extrabold lg:mt-[128px] mt-[32px] lg:ml-[128px] ml-[0px] lg:w-[55%] w-full">
             {t("header")}
           </h1>
-
-          {/* <p className="text-[#FFFDF7] opacity-[0.7] font-light mt-[20px] md:w-[718px] w-full leading-[31px] tracking-[-0.22px] text-[14px] sm:text-[22px] font-fontSecondary text-center">
-          {t("description")}
-        </p> */}
 
           <div className="flex cursor-pointer justify-center items-center md:justify-end w-full md:w-[718px] mt-[48px] btnContainerBlog ">
             <Link href="/mission">
