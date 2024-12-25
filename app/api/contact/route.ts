@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
 export async function POST(request: NextRequest) {
-  const { email } = await request.json();
+  const { email, message } = await request.json();
 
   const transport = nodemailer.createTransport({
     service: "gmail",
@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     from: process.env.NEXT_PUBLIC_MY_EMAIL,
     to: process.env.NEXT_PUBLIC_MY_EMAIL,
     subject: `Message from (${email}) MindMap`,
-    text: `A person with the email ${email} tried to contact you in MindMap.`,
+    text: `A person with the email ${email} sent the following message:\n\n${message}`,
   };
 
   const sendMailPromise = () =>

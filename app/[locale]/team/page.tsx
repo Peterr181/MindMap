@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -24,6 +24,7 @@ const Team = () => {
   const locale = useLocale();
 
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
@@ -34,20 +35,30 @@ const Team = () => {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, message }),
       });
 
       if (response.ok) {
         setStatus("success");
         setEmail(""); // Clear email input
+        setMessage(""); // Clear message input
       } else {
-        throw new Error("Failed to send email");
+        throw new Error("Failed to send message");
       }
     } catch (error) {
       console.error("Error:", error);
       setStatus("error");
     }
   };
+
+  useEffect(() => {
+    if (status === "success" || status === "error") {
+      const timer = setTimeout(() => {
+        setStatus("");
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
 
   // Example data for the specialist
   const specialties: string[] = [
@@ -235,22 +246,33 @@ const Team = () => {
             </p>
             <form
               onSubmit={handleSubmit}
-              className="flex items-center gap-2 justify-center mt-[32px]"
+              className="flex flex-col items-center mt-[32px] w-full sm:w-auto"
             >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder={t("contactPlaceholder")}
-                className="flex h-[56px] p-4 items-center gap-[8px] text-sm self-stretch rounded-lg border border-[#074A68] text-black !outline-none"
-                required
-              />
-              <button
-                type="submit"
-                className="flex h-[53px] px-[24px] py-4 justify-center items-center gap-[4px] rounded-lg bg-[#074A68] text-[#ECFDF5] text-center font-fira text-sm font-normal leading-[160%] hover:bg-inherit transition-all duration-300 hover:text-[#074A68]"
-              >
-                {t("contactButton")}
-              </button>
+              <div className="flex flex-col justify-center gap-[16px] items-center w-full lg:w-[600px]">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder={t("contactPlaceholder")}
+                  className="flex h-[56px] p-4 items-center gap-[8px] text-sm rounded-lg border border-[#074A68] text-black !outline-none w-full"
+                  required
+                />
+                <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder={t("contactMessagePlaceholder")}
+                  className="flex h-[150px] p-4 items-center gap-[8px] text-sm rounded-lg border border-[#074A68] text-black !outline-none mt-2 w-full"
+                  required
+                />
+                <div className="flex w-full justify-center sm:justify-start items-start mt-4">
+                  <button
+                    type="submit"
+                    className="flex h-[56px] px-[24px] py-4 gap-[4px] rounded-lg bg-[#074A68] text-[#ECFDF5] text-center font-fira text-sm font-normal leading-[160%] hover:bg-inherit transition-all duration-300 hover:text-[#074A68]"
+                  >
+                    {t("contactButton")}
+                  </button>
+                </div>
+              </div>
             </form>
             <div className="mt-[16px]">
               {status === "sending" && (

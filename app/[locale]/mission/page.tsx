@@ -64,12 +64,14 @@ const Mission = () => {
               {t("descriptionThirdThird")}
             </p>
           </div>
-          <div className="lg:w-[808px] lg:h-[390px] rounded-[32px] w-full h-full flex  justify-center mx-auto mb-3 lg:mb-0 ">
+          <div className="lg:w-[808px] lg:h-[390px]  w-full h-full flex  justify-center mx-auto mb-3 lg:mb-0 ">
             <Image
-              src="/missionThird.png"
+              src="/missionThird.jpg"
               alt="our mission image"
+              className="rounded-[32px]"
               width={808}
               height={390}
+              quality={100}
             />
           </div>
           <p className="text-[#074A68] text-lg font-light font-fontSecondary leading-[30.8px] tracking-[-0.22px]  text-center  ">

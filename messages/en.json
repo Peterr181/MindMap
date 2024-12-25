@@ -100,7 +100,8 @@
     "messageSuccess": "Message sent successfully!",
     "messageFail": " Failed to send message. Please try again.",
     "scheduleBtn": "SCHEDULE YOUR SESSION",
-    "chooseBtn": "Choose"
+    "chooseBtn": "Choose",
+    "contactMessagePlaceholder": "Enter your message here..."
   },
   "Mission": {
     "headerFirst": "Our Mission",
