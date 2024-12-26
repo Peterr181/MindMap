@@ -17,8 +17,12 @@ export async function POST(request: NextRequest) {
   const mailOptions: Mail.Options = {
     from: process.env.NEXT_PUBLIC_MY_EMAIL,
     to: process.env.NEXT_PUBLIC_MY_EMAIL,
-    subject: `Message from (${email}) MindMap`,
-    text: `A person with the email ${email} sent the following message:\n\n${message}`,
+    subject: message
+      ? `Message from (${email}) MindMap`
+      : `Person with (${email}) subscribed newsletter MindMap`,
+    text: message
+      ? `A person with the email ${email} sent the following message:\n\n${message}`
+      : `A person with the email ${email} has subscribed to blog newsletter!`,
   };
 
   const sendMailPromise = () =>

@@ -47,7 +47,7 @@ const Faq = () => {
               </p>
 
               <div className="flex justify-center sm:justify-start">
-                <Link href="/blog">
+                <Link href="/team#contact-form">
                   <button className="flex h-[60px] px-10 py-4 justify-center items-center gap-2 rounded-[8px] bg-[#074A68] text-[#FFFDF7] font-fontNavbar font-bold leading-[26px] text-sm transition-all hover:bg-inherit hover:text-[#074A68]">
                     {t("buttonText")}
                   </button>

@@ -226,7 +226,10 @@ const Team = () => {
                 height={410}
               />
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div
+              className="flex flex-col justify-center items-center"
+              id="contact-form"
+            >
               <div className="sm:w-[60%] w-full">
                 <h2 className="mt-[32px] text-[#074A68] sm:text-5xl text-[38px] font-extrabold leading-[55px] font-fontPrimary text-center lg:text-start">
                   {t("headerEnd")}
