@@ -18,9 +18,10 @@ const localizedMetadata: Record<
       "At TheMindMap, we harness the power of therapy to help you find balance and personal growth, whether overcoming anxiety, depression, trauma, or enhancing life skills.",
   },
   pl: {
-    title: "MindMap | Terapia transformacyjna dla wzrostu i równowagi",
+    title:
+      "The MindMap Centrum CBT - Twoja droga do dobrego samopoczucia psychicznego",
     description:
-      "W TheMindMap wykorzystujemy moc terapii, aby pomóc Ci znaleźć równowagę i osobisty rozwój, pokonując lęki, depresję, traumę lub rozwijając umiejętności życiowe.",
+      "Terapia poznawczo-behawioralna (CBT) dostosowana do Twoich potrzeb. Pomagamy w radzeniu sobie z trudnymi emocjami, osiąganiu równowagi i rozwoju osobistego. Umów się na konsultację online!",
   },
 };
 
