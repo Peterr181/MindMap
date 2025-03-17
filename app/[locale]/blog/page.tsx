@@ -191,27 +191,29 @@ const Blog = () => {
           )}
         </div>
         <div className="flex items-center gap-[16px] mt-[48px] justify-center">
-          <Image
+          {/* <Image
             src="/pinterestBlog.svg"
             width={28}
             height={28}
             alt="pinterest"
             className="cursor-pointer"
-          />
-          <Image
-            src="/instagramBlog.svg"
-            width={28}
-            height={28}
-            alt="twitter"
-            className="cursor-pointer"
-          />
-          <Image
+          /> */}
+          <Link href="https://www.instagram.com/themindmap_cbt">
+            <Image
+              src="/instagramBlog.svg"
+              width={28}
+              height={28}
+              alt="twitter"
+              className="cursor-pointer"
+            />
+          </Link>
+          {/* <Image
             src="/linkedinBlog.svg"
             width={28}
             height={28}
             alt="facebook"
             className="cursor-pointer"
-          />
+          /> */}
         </div>
       </MaxWidthWrapper>
     </>

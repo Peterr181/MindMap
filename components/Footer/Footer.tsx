@@ -51,16 +51,22 @@ const Footer = () => {
                 {t("connectWithUs")}{" "}
               </h4>
               <ul className="flex flex-col gap-[16px]">
-                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] flex items-center gap-3 sm:justify-start justify-center hover:font-bold transition-all duration-100">
-                  <Image
-                    src="/instagram.svg"
-                    alt="instagram icon"
-                    width={20}
-                    height={20}
-                  />
-                  <p>{t("instagram")}</p>
-                </li>
-                <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] flex items-center gap-3 sm:justify-start justify-center hover:font-bold transition-all duration-100">
+                <Link
+                  href="https://www.instagram.com/themindmap_cbt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] flex items-center gap-3 sm:justify-start justify-center hover:font-bold transition-all duration-100">
+                    <Image
+                      src="/instagram.svg"
+                      alt="instagram icon"
+                      width={20}
+                      height={20}
+                    />
+                    <p>{t("instagram")}</p>
+                  </li>
+                </Link>
+                {/* <li className="text-[#054B4E]  cursor-pointer font-normal leading-[24px] font-fontSecondary text-[18px] flex items-center gap-3 sm:justify-start justify-center hover:font-bold transition-all duration-100">
                   <Image
                     src="/linkedin.svg"
                     alt="linkedin icon"
@@ -77,7 +83,7 @@ const Footer = () => {
                     height={20}
                   />
                   <p> {t("pinterest")}</p>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
