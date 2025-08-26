@@ -15,7 +15,7 @@ export default async function SpecialistProfileServer({
 
   const specialists = [
     {
-      slug: "specialistOne",
+      slug: "kasiahannanowak",
       name: t("specialistOne.name"),
       schoolName: t("specialistOne.schoolName"),
 
@@ -38,7 +38,7 @@ export default async function SpecialistProfileServer({
       description: t("specialistOne.description"),
     },
     {
-      slug: "specialistSecond",
+      slug: "kasianowak",
       name: t("specialistSecond.name"),
       schoolName: t("specialistSecond.schoolName"),
 

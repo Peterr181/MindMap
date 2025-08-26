@@ -126,7 +126,7 @@ const Team = () => {
         name="Kasia H. Nowak"
         specialties={specialties}
         imagePosition="left"
-        linkHref="/team/specialistOne"
+        linkHref="/team/kasiahannanowak"
         buttonText={t("scheduleBtn")}
       />
       <SpecialistCard
@@ -134,7 +134,7 @@ const Team = () => {
         name="Kasia Nowak"
         specialties={specialties2}
         imagePosition="right"
-        linkHref="/team/specialistSecond"
+        linkHref="/team/kasianowak"
         buttonText={t("scheduleBtn")}
       />
     </>
