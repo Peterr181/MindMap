@@ -80,12 +80,12 @@ export default async function LocaleLayout({
         <meta property="og:url" content="https://themindmap.eu/" />
         <meta property="og:title" content="MindMap | Transformative Therapy for Growth and Balance" />
         <meta property="og:description" content="Transformative Therapy for Growth and Balance" />
-        <meta property="og:image" content="https://themindmap.eu/mainLogoPreview.png" />
+        <meta property="og:image" content="https://themindmap.eu/mainLogoPreview2.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://themindmap.eu/" />
         <meta name="twitter:title" content="MindMap | Transformative Therapy for Growth and Balance" />
         <meta name="twitter:description" content="Transformative Therapy for Growth and Balance" />
-        <meta name="twitter:image" content="https://themindmap.eu/mainLogoPreview.png" />
+        <meta name="twitter:image" content="https://themindmap.eu/mainLogoPreview2.png" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
