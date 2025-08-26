@@ -76,6 +76,16 @@ export default async function LocaleLayout({
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <title>{title}</title>
         <meta name="description" content={description} />
+             <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://themindmap.eu/" />
+        <meta property="og:title" content="MindMap | Transformative Therapy for Growth and Balance" />
+        <meta property="og:description" content="Transformative Therapy for Growth and Balance" />
+        <meta property="og:image" content="https://themindmap.eu/mainLogo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://themindmap.eu/" />
+        <meta name="twitter:title" content="MindMap | Transformative Therapy for Growth and Balance" />
+        <meta name="twitter:description" content="Transformative Therapy for Growth and Balance" />
+        <meta name="twitter:image" content="https://themindmap.eu/mainLogo.png" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
