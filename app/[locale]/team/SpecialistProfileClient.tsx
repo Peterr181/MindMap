@@ -48,7 +48,7 @@ const SpecialistProfileClient: React.FC<SpecialistProfileClientProps> = ({
 
   const getLocaleIframeSrc = (slug: string, lang: string) => {
     let domain;
-    if (slug === "specialistOne") {
+    if (slug === "kasiahannanowak") {
       domain = lang === "en" ? "kasiahnowak-en" : "kasiahnowak";
     } else {
       domain = lang === "en" ? "kasianowak-en" : "kasianowak";
