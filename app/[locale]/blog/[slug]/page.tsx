@@ -55,6 +55,9 @@ const Page = async ({ params }: PageProps) => {
     mentalhealth: t("mental"),
     anxiety: t("anxiety"),
     selfCare: t("selfCare"),
+    cbtbasics: t("cbtbasics"),
+    depression: t("depression"),
+    ptsd: t("ptsd")
   };
 
   const options = {

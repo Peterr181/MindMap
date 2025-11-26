@@ -67,6 +67,9 @@
     "mental": "Zdrowie psychiczne",
     "anxiety": "Lęk",
     "selfCare": "Samoopieka",
+    "cbtbasics": "Podstawy CBT",
+    "depression": "Depresja",
+    "ptsd": "PTSD",
     "backToBlog": "Powrót do bloga",
     "published": "Opublikowano: ",
     "shareThisPost": "Udostępnij ten post",
@@ -192,7 +195,10 @@
     "copingSkills": "Umiejętności radzenia sobie",
     "mental": "Zdrowie psychiczne",
     "anxiety": "Lęk",
-    "selfCare": "Samoopieka"
+    "selfCare": "Samoopieka",
+    "cbtbasics": "Podstawy CBT",
+    "depression": "Depresja",
+    "ptsd": "PTSD"
   },
   "Faq": {
     "header": "Najczęściej zadawane pytania",

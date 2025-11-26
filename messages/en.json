@@ -177,7 +177,10 @@
     "copingSkills": "Coping Skills",
     "mental": "Mental Health",
     "anxiety": "Anxiety",
-    "selfCare": "Self-Care"
+    "selfCare": "Self-Care",
+    "cbtbasics": "CBT Basics",
+    "depression": "Depression",
+    "ptsd": "PTSD"
   },
   "Blog": {
     "header": "Explore mental well-being with Mindful Insights.",
@@ -194,8 +197,11 @@
     "happy": "Happy",
     "copingSkills": "Coping Skills",
     "mental": "Mental Health",
-    "anxiety": "Anxiety",
     "selfCare": "Self-Care",
+    "anxiety": "Anxiety", 
+    "cbtbasics": "CBT Basics", 
+    "depression": "Depression", 
+    "ptsd": "PTSD",
     "backToBlog": "Back to Blog",
     "published": "Published: ",
     "shareThisPost": "Share this post",
