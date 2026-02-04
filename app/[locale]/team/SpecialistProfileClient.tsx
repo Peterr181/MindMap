@@ -112,7 +112,7 @@ const SpecialistProfileClient: React.FC<SpecialistProfileClientProps> = ({
         </h3>
         <ul className="text-lg text-[#074A68] text-center lg:text-left sm:p-0 p-3 list-disc list-inside mt-[16px]">
           {specialist.areas.map(
-            (area, index) => area && <li key={index}>{area}</li>
+            (area, index) => area && <li key={index}>{area}</li>,
           )}
         </ul>
 
@@ -126,7 +126,13 @@ const SpecialistProfileClient: React.FC<SpecialistProfileClientProps> = ({
               key={index}
               title={service.title}
               description={service.description}
-              price="180 zł" // Assuming price is part of the service object
+              price={
+                slug === "kasianowak"
+                  ? "200 zł"
+                  : slug === "kasiahannanowak"
+                    ? "230 zł"
+                    : "180 zł"
+              }
               isPrimaryButton={service.isPrimaryButton}
               onClick={() => handleServiceClick()} // Pass language (default 'en')
             />
