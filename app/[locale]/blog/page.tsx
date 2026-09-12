@@ -56,10 +56,7 @@ const Blog = () => {
         const allCategories: string[] = filteredPosts.flatMap(
           (post) => post.category as string[],
         );
-        let uniqueCategories = Array.from(new Set(allCategories));
-        if (!uniqueCategories.includes("other")) {
-          uniqueCategories.push("other");
-        }
+        const uniqueCategories = Array.from(new Set(allCategories));
         setCategories(uniqueCategories);
       } catch (error) {
         console.error("Error fetching blog posts:", error);
