@@ -25,47 +25,51 @@ const Blog = () => {
     anxiety: t("anxiety"),
     cbtbasics: t("cbtbasics"),
     depression: t("depression"),
-    ptsd: t("ptsd")
+    ptsd: t("ptsd"),
+    other: t("other"),
   };
 
   const [posts, setPosts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState<string[]>([]);
 
-useEffect(() => {
-  const fetchPosts = async () => {
-    try {
-      const response = await client.getEntries({
-        content_type: "mindMapTest",
-      });
-      const fetchedPosts = response.items.map((item) => item.fields);
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await client.getEntries({
+          content_type: "mindMapTest",
+        });
+        const fetchedPosts = response.items.map((item) => item.fields);
 
-      const filteredPosts = fetchedPosts
-        .filter((post) =>
-          isPolish ? post.language === "pl" : post.language === "en"
-        )
-      .sort((a, b) => {
-  const dateA = new Date(a.publishDate as string).getTime();
-  const dateB = new Date(b.publishDate as string).getTime();
-  return dateB - dateA;
-})
+        const filteredPosts = fetchedPosts
+          .filter((post) =>
+            isPolish ? post.language === "pl" : post.language === "en",
+          )
+          .sort((a, b) => {
+            const dateA = new Date(a.publishDate as string).getTime();
+            const dateB = new Date(b.publishDate as string).getTime();
+            return dateB - dateA;
+          });
 
-      setPosts(filteredPosts);
+        setPosts(filteredPosts);
 
-      const allCategories: string[] = filteredPosts.flatMap(
-        (post) => post.category as string[]
-      );
-      const uniqueCategories = Array.from(new Set(allCategories));
-      setCategories(uniqueCategories);
-    } catch (error) {
-      console.error("Error fetching blog posts:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
+        const allCategories: string[] = filteredPosts.flatMap(
+          (post) => post.category as string[],
+        );
+        let uniqueCategories = Array.from(new Set(allCategories));
+        if (!uniqueCategories.includes("other")) {
+          uniqueCategories.push("other");
+        }
+        setCategories(uniqueCategories);
+      } catch (error) {
+        console.error("Error fetching blog posts:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  fetchPosts();
-}, [isPolish, isEnglish]);
+    fetchPosts();
+  }, [isPolish, isEnglish]);
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
